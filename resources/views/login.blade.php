@@ -158,16 +158,19 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="hero-content animate__animated animate__fadeInLeft wow" data-wow-duration="2s">
-                        <span class="  fs-5 text-dark"> Selamat Datang Di
-                            Website</span>
+                        <span class="fs-5 text-dark"> Selamat Datang di Website</span>
                         <div class="image-container">
-                            <img id="myuinsu" src="/assets/img/myuinsu.png" alt="">
+                            <img id="myuinsu" src="/assets/img/logo2.png" alt="Logo Si Pental">
                         </div>
 
-                        </h1>
-                        <p>MY UINSU adalah website yang menjadi pusat dan penghubung pengguna dari Universitas Islam
-                            Negeri Sumatera Utara baik mahasiswa, dosen, maupun pegawai</p>
-                        <div class="about-counter mt-50 ">
+                        <p>
+                            <b>Si Pental</b> (Sistem Informasi Kesehatan Mental) adalah platform edukasi
+                            dan layanan konseling online yang membantu pengguna memahami, menjaga,
+                            dan meningkatkan kesehatan mental melalui informasi, tips, ruang curhat,
+                            cek kondisi mental, hingga konsultasi dengan konselor.
+                        </p>
+
+                        <div class="about-counter mt-50">
                             <div class="row">
                                 <div class="col-sm-4 ">
                                     <div class="single-counter counter-color-1 d-flex wow fadeInUp"
@@ -178,9 +181,9 @@
                                         </div>
                                         <div class="counter-content media-body">
                                             <div class="counter-count">
-                                                <div class="counter" id="clientsCount">22118</div>
+                                                <div class="counter" id="clientsCount">20</div>
                                             </div>
-                                            <p class="text">Mahasiswa</p>
+                                            <p class="text">Penyebab Gangguan</p>
                                         </div>
                                     </div> <!-- single counter -->
                                 </div>
@@ -193,9 +196,9 @@
                                         </div>
                                         <div class="counter-content media-body">
                                             <div class="counter-count">
-                                                <div class="counter" id="satisfactionCount">603</div>
+                                                <div class="counter" id="satisfactionCount">10</div>
                                             </div>
-                                            <p class="text">Dosen</p>
+                                            <p class="text">Tanda-Tanda</p>
                                         </div>
                                     </div> <!-- single counter -->
                                 </div>
@@ -208,27 +211,25 @@
                                         </div>
                                         <div class="counter-content media-body">
                                             <div class="counter-count">
-                                                <div class="counter" id="projectsCount">565</div>
+                                                <div class="counter" id="projectsCount">3</div>
                                             </div>
-                                            <p class="text">Pegawai</p>
+                                            <p class="text">Konselor Aktif</p>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
 
-
-
                     </div>
                 </div>
+
                 <div class="col-lg-6">
                     <div class="hero-img animate__animated animate__fadeInRight wow" data-wow-duration="1.5s">
                         <div class="hero-figure-box hero-figure-box-09"></div>
                         <div class="hero-figure-box hero-figure-box-07"></div>
                         <div class="hero-figure-box hero-figure-box-08 " data-wow-delay=".5s" data-rotation="-22deg"
                             style="transform: rotate(-22deg) scale(1); opacity: 1;"></div>
-                        <img src="/assets/img/gedung.png" alt="" class="wave-animation-2">
+                        <img src="/assets/img/vector/11.png" alt="" class="wave-animation-2">
                     </div>
                 </div>
             </div>
@@ -242,272 +243,222 @@
                     <div class="about-img text-lg-right animate__animated animate__fadeInUp wow"
                         data-wow-duration="1.5s">
                         <div class="image-container">
-                            <img id="foto-rektor" src="/assets/img/foto-rektor.png" alt="">
+                            <img id="foto-rektor" src="/assets/img/vector/13.png" alt=""
+                                style="width:500px;height:500px;object-fit:contain;">
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-8 col-lg-8" id="content-2">
                     <div class="about-content animate__animated animate__fadeInUp wow" data-wow-duration="1.5s">
-                        <div class="section-title ">
-                            <h1 class="mb-25  ">Informasi Tentang My UINSU</h1>
-                            <p class=" ">MY UINSU adalah website yang menjadi pusat dan penghubung antara
-                                Universitas
-                                Islam Negeri Sumatera Utara dengan mahasiswa, alumni, dosen, maupun pegawai</p>
-                            <p>Selamat datang di lingkungan akademis yang penuh inspirasi ini, tempat di mana keilmuan
-                                dan nilai-nilai Islam berkumpul harmonis. Sebagai Rektor UIN Sumatera Utara, dengan
-                                rendah hati dan sukacita, ingin menyampaikan selamat datang kepada Anda semua. UIN
-                                Sumatera Utara Medan memiliki 8 Fakultas dan 1 Program Pascasarjana. UINSU adalah kampus
-                                islam yang memiliki moto “Smart Islamic University”</p>
-                            <a href="/arsip" onclick="window.location.href='/arsip'"
-                                class="button  mt-20 radius-10  ">Kunjungi Website UINSU <i
+                        <div class="section-title">
+                            <h1 class="mb-25">Informasi Tentang Kesehatan Mental</h1>
+                            <p>
+                                Kesehatan mental adalah kondisi ketika pikiran, perasaan, dan perilaku berada dalam
+                                keadaan seimbang,
+                                sehingga seseorang mampu mengelola stres, belajar atau bekerja secara produktif,
+                                menjalin hubungan yang baik,
+                                serta berkontribusi positif bagi lingkungannya.
+                            </p>
+                            <p>
+                                Menjaga kesehatan mental sama pentingnya dengan menjaga kesehatan fisik. Beberapa faktor
+                                yang memengaruhi
+                                kesehatan mental antara lain: pola tidur, pola makan, aktivitas fisik, lingkungan
+                                keluarga dan sosial,
+                                cara mengelola emosi, serta penggunaan media sosial.
+                            </p>
+                            <a href="#penyebab" class="button mt-20 radius-10">Pelajari Lebih Lanjut <i
                                     class="lni lni-angle-double-right"></i></a>
                         </div>
                     </div>
                 </div>
+
             </div>
 
         </div>
     </section>
 
-    <section id="pricing" class="pricing-section pricing-style-4 " style="background: url('/assets/img/bg2.jpg');">
+    <section id="penyebab" class="pricing-section pricing-style-4" style="background: url('/assets/img/bg2.jpg');">
         <div class="container content">
             <div class="row align-items-center">
                 <div class="col-xl-5 col-lg-6">
                     <div class="section-title mb-60 animate__animated animate__fadeInUp wow" data-wow-duration="1.5s">
-                        <h3 class="mb-15  ">Aplikasi Layanan</h3>
-                        <p class=" ">UIN Sumatera Utara Memiliki Banyak Layanan Aplikasi
-                            Dalam Mengelola dan Memanajemen Sistem Yang Ada Dikampus</p>
+                        <h3 class="mb-15">Penyebab Gangguan Mental</h3>
+                        <p>
+                            Gangguan mental dapat dipengaruhi oleh banyak faktor, baik dari lingkungan, psikologis,
+                            maupun biologis.
+                            Berikut beberapa penyebab umum yang perlu dikenali:
+                        </p>
                     </div>
                 </div>
                 <div class="col-xl-7 col-lg-6">
-                    <div class="pricing-active-wrapper  animate__animated animate__fadeInUp wow"
+                    <div class="pricing-active-wrapper animate__animated animate__fadeInUp wow"
                         data-wow-duration="1.5s">
                         <div class="pricing-active">
+
                             <div class="single-pricing-wrapper">
                                 <div class="single-pricing">
-                                    <h4>Portal SIA</h4>
-                                    <h3><i class="bi bi-gear"></i></h3>
-                                    <p>Menangani Sistem Informasi Akademik Dosen dan Mahasiswa UINSU</p>
-                                    <a href="https://portalsia.uinsu.ac.id " target="_blank"
-                                        class="button radius-30 mt-2">Kunjungi <i
-                                            class="lni lni-angle-double-right"></i>
-                                    </a>
+                                    <h4>Bullying</h4>
+                                    <img src="/assets/img/vector/3.png" alt="Bullying"
+                                        style="width:200px;height:200px;object-fit:contain;">
+
+                                    <p>Kekerasan verbal, fisik, maupun cyber yang dialami berulang kali.</p>
+                                    <a href="#detail-bullying" class="button radius-30 mt-2">Lihat Informasi <i
+                                            class="bi bi-box-arrow-up-right"></i></a>
                                 </div>
                             </div>
+
                             <div class="single-pricing-wrapper">
                                 <div class="single-pricing">
-                                    <h4>SI-PMB</h4>
-                                    <h3><i class="bi bi-person-bounding-box"></i></h3>
-                                    <p>Menangani Sistem Informasi Penerimaan Mahasiswa Baru UIN Sumatera Utara</p>
-                                    <a href="https://sipmb.uinsu.ac.id " target="_blank"
-                                        class="button radius-30 mt-2">Kunjungi <i
-                                            class="lni lni-angle-double-right"></i></a>
+                                    <h4>Homesick</h4>
+                                    <img src="/assets/img/vector/19.png" alt="Homesick"
+                                        style="width:200px;height:200px;object-fit:contain;">
+                                    <p>Rasa rindu berlebihan terhadap rumah dan keluarga.</p>
+                                    <a href="#detail-homesick" class="button radius-30 mt-2">Lihat Informasi <i
+                                            class="bi bi-box-arrow-up-right"></i></a>
                                 </div>
                             </div>
+
                             <div class="single-pricing-wrapper">
                                 <div class="single-pricing">
-                                    <h4>SI-MABA</h4>
-                                    <h3><i class="bi bi-person-standing"></i></h3>
-                                    <p>Menangani Sistem Informasi Daftar Ulang Mahasiswa Baru UIN Sumatera Utara</p>
-                                    <a href="https://maba.uinsu.ac.id " target="_blank"
-                                        class="button radius-30 mt-2">Kunjungi <i
-                                            class="lni lni-angle-double-right"></i></a>
+                                    <h4>Stres Belajar</h4>
+                                    <img src="/assets/img/vector/12.png" alt="Stres Belajar"
+                                        style="width:200px;height:200px;object-fit:contain;">
+                                    <p>Tekanan akademik atau pekerjaan yang berlebihan.</p>
+                                    <a href="#detail-stres-belajar" class="button radius-30 mt-2">Lihat Informasi <i
+                                            class="bi bi-box-arrow-up-right"></i></a>
                                 </div>
                             </div>
+
                             <div class="single-pricing-wrapper">
                                 <div class="single-pricing">
-                                    <h4>SI-SELMA</h4>
-                                    <h3><i class="bi bi-person-circle"></i></h3>
-                                    <p>Menangani Sistem Informasi Surat Elektronik Mahasiswa UIN Sumatera Utara</p>
-                                    <a href="https:// .uinsu.ac.id " target="_blank"
-                                        class="button radius-30 mt-2">Kunjungi <i
-                                            class="lni lni-angle-double-right"></i></a>
+                                    <h4>Tekanan Sosial</h4>
+                                    <img src="/assets/img/vector/16.png" alt="Tekanan Sosial"
+                                        style="width:200px;height:200px;object-fit:contain;">
+                                    <p>Overthinking dan membandingkan diri dengan orang lain.</p>
+                                    <a href="#detail-tekanan-sosial" class="button radius-30 mt-2">Lihat Informasi <i
+                                            class="bi bi-box-arrow-up-right"></i></a>
                                 </div>
                             </div>
+
                             <div class="single-pricing-wrapper">
                                 <div class="single-pricing">
-                                    <h4>SI-LIANA</h4>
-                                    <h3><i class="bi bi-check2-all"></i></h3>
-                                    <p>Menangani Sistem Informasi Kuliah Kerja Nyata UIN Sumatera Utara</p>
-                                    <a href="https://siselma.uinsu.ac.id " target="_blank"
-                                        class="button radius-30 mt-2">Kunjungi <i
-                                            class="lni lni-angle-double-right"></i></a>
+                                    <h4>Trauma Masa Lalu</h4>
+                                    <img src="/assets/img/vector/18.png" alt="Trauma Masa Lalu"
+                                        style="width:200px;height:200px;object-fit:contain;">
+                                    <p>Pengalaman buruk seperti kekerasan, kecelakaan, atau kehilangan.</p>
+                                    <a href="#detail-trauma" class="button radius-30 mt-2">Lihat Informasi <i
+                                            class="bi bi-box-arrow-up-right"></i></a>
                                 </div>
                             </div>
+
                             <div class="single-pricing-wrapper">
                                 <div class="single-pricing">
-                                    <h4>E-LEARNING</h4>
-                                    <h3><i class="bi bi-mortarboard-fill"></i></h3>
-                                    <p>Menangani Sistem Informasi Pembelajaran Online UIN Sumatera Utara</p>
-                                    <a href="https://elearning.uinsu.ac.id " target="_blank"
-                                        class="button radius-30 mt-2">Kunjungi <i
-                                            class="lni lni-angle-double-right"></i></a>
+                                    <h4>Penyalahgunaan Zat</h4>
+                                    <img src="/assets/img/vector/5.webp" alt="Penyalahgunaan Zat"
+                                        style="width:200px;height:200px;object-fit:contain;">
+                                    <p>Penggunaan alkohol atau narkoba yang memicu depresi dan kecemasan.</p>
+                                    <a href="#detail-zat" class="button radius-30 mt-2">Lihat Informasi <i
+                                            class="bi bi-box-arrow-up-right"></i></a>
                                 </div>
                             </div>
+
                             <div class="single-pricing-wrapper">
                                 <div class="single-pricing">
-                                    <h4>SI-JURNAL</h4>
-                                    <h3><i class="bi bi-journals"></i></h3>
-                                    <p>Menangani Tentang Sistem Informasi Jurnal UIN Sumatera Utara</p>
-                                    <a href="https://sijurnal.uinsu.ac.id " target="_blank"
-                                        class="button radius-30 mt-2">Kunjungi <i
-                                            class="lni lni-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="single-pricing-wrapper">
-                                <div class="single-pricing">
-                                    <h4>SI-LIBRARY</h4>
-                                    <h3><i class="bi bi-book-half"></i></h3>
-                                    <p>Menangani Website Perpustakaan UIN Sumatera Utara</p>
-                                    <a href="https://silibrary.uinsu.ac.id " target="_blank"
-                                        class="button radius-30 mt-2">Kunjungi <i
-                                            class="lni lni-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="single-pricing-wrapper">
-                                <div class="single-pricing">
-                                    <h4>REPOSITORY</h4>
-                                    <h3><i class="bi bi-bookmarks-fill"></i></h3>
-                                    <p>Menangani Sistem Informasi My UIN Sumatera Utara</p>
-                                    <a href="https://repository.uinsu.ac.id " target="_blank"
-                                        class="button radius-30 mt-2">Kunjungi <i
-                                            class="lni lni-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="single-pricing-wrapper">
-                                <div class="single-pricing">
-                                    <h4>SI-PUSAKA</h4>
-                                    <h3><i class="bi bi-chat-square-dots-fill"></i></h3>
-                                    <p>Menangani Sistem Informasi Pengajuan Surat Bebas Pustaka UIN Sumatera Utara</p>
-                                    <a href="https://sipusaka.uinsu.ac.id " target="_blank"
-                                        class="button radius-30 mt-2">Kunjungi <i
-                                            class="lni lni-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="single-pricing-wrapper">
-                                <div class="single-pricing">
-                                    <h4>SI-RASIDA</h4>
-                                    <h3><i class="bi bi-mortarboard"></i></h3>
-                                    <p>Menangani Sistem Informasi Pendaftaran Sidang dan Wisuda UINSU</p>
-                                    <a href="https://sirasida.uinsu.ac.id " target="_blank"
-                                        class="button radius-30 mt-2">Kunjungi <i
-                                            class="lni lni-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="single-pricing-wrapper">
-                                <div class="single-pricing">
-                                    <h4>SI-KIP</h4>
-                                    <h3><i class="bi bi-person-vcard-fill"></i></h3>
-                                    <p>Menangani Sistem Informasi Penjaringan Beasiswa KIP UIN Sumatera Utara</p>
-                                    <a href="https://kip.uinsu.ac.id " target="_blank"
-                                        class="button radius-30 mt-2">Kunjungi <i
-                                            class="lni lni-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="single-pricing-wrapper">
-                                <div class="single-pricing">
-                                    <h4>UMM</h4>
-                                    <h3><i class="bi bi-pencil-square"></i></h3>
-                                    <p>Menangani Sistem Informasi Ujian Masuk Mandiri Online UIN Sumatera Utara</p>
-                                    <a href="https://umm.uinsu.ac.id " target="_blank"
-                                        class="button radius-30 mt-2">Kunjungi <i
-                                            class="lni lni-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="single-pricing-wrapper">
-                                <div class="single-pricing">
-                                    <h4>SI-DAHLIA</h4>
-                                    <h3><i class="bi bi-info-circle-fill"></i></h3>
-                                    <p>Menangani Sistem Informasi Daftar Hadir Kuliah UIN Sumatera Utara</p>
-                                    <a href="https://.uinsu.ac.id " target="_blank"
-                                        class="button radius-30 mt-2">Kunjungi <i
-                                            class="lni lni-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="single-pricing-wrapper">
-                                <div class="single-pricing">
-                                    <h4>SI-BEDJO</h4>
-                                    <h3<i class="bi bi-person-video3"></i></h3>
-                                        <p>Menangani Sistem Informasi Beban Kinerja Dosen UIN Sumatera Utara</p>
-                                        <a href="https://sibedjo.uinsu.ac.id " target="_blank"
-                                            class="button radius-30 mt-2">Kunjungi <i
-                                                class="lni lni-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="single-pricing-wrapper">
-                                <div class="single-pricing">
-                                    <h4>SI-RALINE</h4>
-                                    <h3><i class="bi bi-person-check"></i></h3>
-                                    <p>Menangani Sistem Informasi Presensi Online UIN Sumatera Utara</p>
-                                    <a href="https://siraline.uinsu.ac.id " target="_blank"
-                                        class="button radius-30 mt-2">Kunjungi <i
-                                            class="lni lni-angle-double-right"></i></a>
-                                </div>
-                            </div>
-                            <div class="single-pricing-wrapper">
-                                <div class="single-pricing">
-                                    <h4>LKP</h4>
-                                    <h3><i class="bi bi-person-fill-gear"></i></h3>
-                                    <p>Menangani Sistem Informasi Laporan Kinerja UIN Sumatera Utara</p>
-                                    <a href="https://lkp.uinsu.ac.id " target="_blank"
-                                        class="button radius-30 mt-2">Kunjungi <i
-                                            class="lni lni-angle-double-right"></i></a>
+                                    <h4>Lingkungan Tidak Sehat</h4>
+                                    <img src="/assets/img/vector/20.png" alt="Lingkungan Tidak Sehat"
+                                        style="width:200px;height:200px;object-fit:contain;">
+                                    <p>Hubungan keluarga atau pertemanan yang toxic.</p>
+                                    <a href="#detail-lingkungan" class="button radius-30 mt-2">Lihat Informasi <i
+                                            class="bi bi-box-arrow-up-right"></i></a>
                                 </div>
                             </div>
 
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section id="pencarian" class="about-section pt-50 pb-70">
+    <section id="tanda" class="about-section pt-50 pb-70">
         <div class="container">
             <div class="row align-items-center">
+
+                <!-- Card Carousel -->
                 <div class="col-xl-8 col-lg-8" id="content-3">
                     <div class="containers">
                         <div class="card-carousel">
+
                             <div class="card" id="1">
-                                <div class="image-containers"> <img class="icon-card" src="/assets/img/mahasiswa.png"
-                                        alt=""> </div>
+                                <div class="image-containers">
+                                    <img class="icon-card" src="/assets/img/vector/3.png" alt="cemas">
+                                </div>
                                 <p>
-                                <h6>Mahasiswa</h6>Dapatkan akses cepat ke sistem akademik, jadwal kuliah, e-learning,
-                                perpustakaan digital, dan berbagai layanan mahasiswa lainnya.</p>
+                                <h6>Cemas Berlebihan</h6>
+                                Merasa gelisah, takut, atau khawatir secara berlebihan tanpa alasan jelas.
+                                </p>
                             </div>
+
                             <div class="card" id="2">
-                                <div class="image-containers"><img class="icon-card" src="/assets/img/dosen.png"
-                                        alt=""></div>
+                                <div class="image-containers">
+                                    <img class="icon-card" src="/assets/img/vector/7.webp" alt="gangguan tidur">
+                                </div>
                                 <p>
-                                <h6>Dosen</h6> Kelola data perkuliahan, mengakses jurnal akademik, penelitian, serta
-                                berbagai layanan akademik yang mendukung proses belajar mengajar.</p>
+                                <h6>Gangguan Tidur</h6>
+                                Sulit tidur, tidur terlalu sedikit/terlalu lama, atau sering mimpi buruk.
+                                </p>
                             </div>
+
                             <div class="card" id="3">
-                                <div class="image-containers"><img class="icon-card" src="/assets/img/pegawai.png"
-                                        alt=""></div>
+                                <div class="image-containers">
+                                    <img class="icon-card" src="/assets/img/vector/12.png" alt="kehilangan minat">
+                                </div>
                                 <p>
-                                <h6>Pegawai</h6> Akses sistem administrasi kampus, manajemen kepegawaian, serta layanan
-                                internal lainnya untuk mendukung operasional universitas</p>
+                                <h6>Kehilangan Minat</h6>
+                                Tidak lagi bersemangat melakukan aktivitas yang biasanya disukai.
+                                </p>
                             </div>
+
+                            <div class="card" id="4">
+                                <div class="image-containers">
+                                    <img class="icon-card" src="/assets/img/vector/16.png" alt="menarik diri">
+                                </div>
+                                <p>
+                                <h6>Menarik Diri</h6>
+                                Menghindari interaksi sosial dan merasa ingin sendirian terus-menerus.
+                                </p>
+                            </div>
+
+                            <div class="card" id="5">
+                                <div class="image-containers">
+                                    <img class="icon-card" src="/assets/img/vector/20.png" alt="emosi tidak stabil">
+                                </div>
+                                <p>
+                                <h6>Emosi Tidak Stabil</h6>
+                                Mudah marah, menangis, atau sedih tanpa sebab yang jelas.
+                                </p>
+                            </div>
+
                         </div>
                         <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
                     </div>
-
-
-
                 </div>
+
+                <!-- Content samping -->
                 <div class="col-xl-4 col-lg-4" id="content-4">
                     <div class="about-content animate__animated animate__fadeInUp wow" data-wow-duration="1.5s">
-                        <div class="section-title ">
-                            <h1 class="">Akses Mudah ke Seluruh Layanan Kampus</h1>
-                            <p>My UINSU adalah pusat penghubung antara Universitas Islam Negeri Sumatera Utara dengan
-                                mahasiswa, alumni, dan dosen/pegawai. Website ini menyediakan akses ke berbagai layanan
-                                akademik dan informasi penting sesuai dengan peran pengguna. Masuk lalu lihat peran
-                                anda!</p>
+                        <div class="section-title">
+                            <h1 class="">Tanda-Tanda Gangguan Mental</h1>
+                            <p>
+                                Gangguan mental dapat dikenali sejak dini melalui perubahan pikiran, emosi, dan
+                                perilaku.
+                                Beberapa tanda umum di antaranya: cemas berlebihan, sulit tidur, kehilangan minat,
+                                menarik diri dari lingkungan sosial, serta emosi yang tidak stabil.
+                            </p>
                         </div>
 
-                        <a href="/pencarian" onclick="window.location.href='/pencarian'"
-                            class="button  mt-12 radius-10  ">Masuk ke My UINSU <i
+                        <a href="#tips" class="button mt-12 radius-10">Pelajari Tips Menjaga Mental <i
                                 class="lni lni-angle-double-right"></i></a>
                     </div>
                 </div>
@@ -516,106 +467,215 @@
         </div>
     </section>
 
-    <section id="arsip" class="about-section pt-10 pb-10" style="background: url('/assets/img/bg3.jpg');">
+
+
+    <section id="konseling" class="about-section pt-10 pb-10" style="background: url('/assets/img/bg3.jpg');">
         <div class="container">
             <div class="row align-items-center">
+
+                <!-- Konten Konseling -->
                 <div class="col-xl-6 col-lg-6">
                     <div class="about-content animate__animated animate__fadeInUp wow" data-wow-duration="1.5s">
-                        <div class="section-title mb-30 ">
-                            <h1 class="mb-25  ">Bantuan & Dukungan My UINSU</h1>
-                            <p class=" ">My UINSU menyediakan akses untuk melayanin permasalahan umum yang terjadi
-                                pada
-                                website/aplikasi ataupun akun pengguna dari seluruh aplikasi/website UINSU yang memiliki
-                                masalah </p>
+                        <div class="section-title mb-30">
+                            <h1 class="mb-25">Ruang Konseling</h1>
+                            <p class="">
+                                Si Pental menyediakan layanan konseling untuk membantu kamu yang sedang menghadapi
+                                masalah
+                                kesehatan mental, seperti stres belajar, kecemasan, atau tekanan sosial.
+                                Kamu bisa terhubung langsung dengan konselor melalui WhatsApp.
+                            </p>
                         </div>
+
                         <ul>
-                            <li class=" ">
-                                <i class="lni lni-checkmark-circle"></i>
-                                Lupa Password akun pengguna
+                            <li class=""><i class="lni lni-checkmark-circle"></i> Konseling privat dengan
+                                konselor</li>
+                            <li class=""><i class="lni lni-checkmark-circle"></i> Diskusi ringan untuk kelola
+                                stres & emosi</li>
+                            <li class=""><i class="lni lni-checkmark-circle"></i> Rekomendasi langkah lanjutan
                             </li>
-                            <li class=" ">
-                                <i class="lni lni-checkmark-circle"></i>
-                                Kesalahan pada data pengguna
-                            </li>
-                            <li class=" ">
-                                <i class="lni lni-checkmark-circle"></i>
-                                Kendala saat penggunaan aplikasi
-                            </li>
-                            <li class=" ">
-                                <i class="lni lni-checkmark-circle"></i>
-                                Akun terblokir
-                            </li>
+                            <li class=""><i class="lni lni-checkmark-circle"></i> Gratis & rahasia terjaga</li>
                         </ul>
-                        <a href="/arsip" onclick="window.location.href='/arsip'"
-                            class="button  mt-20 radius-10  ">Bantuan & Dukungan <i
-                                class="lni lni-angle-double-right"></i></a>
+
+                        <!-- Tombol ke WhatsApp -->
+                        <a href="https://wa.me/6281234567890" target="_blank" class="button mt-20 radius-10">
+                            Hubungi Konselor via WhatsApp <i class="lni lni-whatsapp"></i>
+                        </a>
                     </div>
                 </div>
+
+                <!-- Gambar Samping -->
                 <div class="col-xl-6 col-lg-6">
-                    <div class="about-img text-lg-right  animate__animated animate__fadeInUp wow"
+                    <div class="about-img text-lg-right animate__animated animate__fadeInUp wow"
                         data-wow-duration="1.5s">
                         <div class="image-container">
                             <img id="support" src="/assets/img/support.png" alt="">
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
+
+    <section id="tentang" class="about-section pt-50 pb-50">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Konten Ruang Curhat -->
+                <div class="col-xl-8 col-lg-8" id="content-2">
+                    <div class="about-content animate__animated animate__fadeInUp wow" data-wow-duration="1.5s">
+                        <div class="section-title">
+                            <h1 class="mb-25">Ruang Curhat</h1>
+                            <p>
+                                Ruang Curhat adalah <b>chat bot Si Pental</b> yang siap mendengarkan ceritamu dengan
+                                empati.
+                                Kamu bisa berbagi tentang stres belajar, cemas, homesick, atau apa pun yang sedang kamu
+                                rasakan.
+                                Bot akan memberi dukungan ringan, tips praktis, dan mengarahkanmu ke konten terkait.
+                                <i>Catatan: ini bukan pengganti konsultasi profesional.</i>
+                            </p>
+
+                            <ul style="margin-top:10px;">
+                                <li>🧩 <b>Dengarkan & Validasi</b> — tanggapan hangat, non-menghakimi.</li>
+                                <li>🧭 <b>Arahkan</b> — ke bagian Penyebab, Tanda-Tanda, dan Tips.</li>
+                                <li>🧪 <b>Cek Kondisi</b> — ajak isi kuesioner (#kuesioner) bila diperlukan.</li>
+                                <li>🤝 <b>Krisis?</b> — arahkan ke konselor/WA BK dan bantuan cepat.</li>
+                            </ul>
+
+                            <!-- Quick Prompts -->
+                            <div class="mt-3" aria-label="Contoh pertanyaan cepat">
+                                <span class="badge bg-light text-dark me-2 mb-2">“Aku sering overthinking, harus
+                                    gimana?”</span>
+                                <span class="badge bg-light text-dark me-2 mb-2">“Tips biar ga homesick?”</span>
+                                <span class="badge bg-light text-dark me-2 mb-2">“Cara atur tidur dan stres
+                                    belajar?”</span>
+                                <span class="badge bg-light text-dark me-2 mb-2">“Aku pengen curhat.”</span>
+                            </div>
+
+                            <!-- CTA -->
+                            <div class="d-flex gap-2 flex-wrap">
+                                <a  href="#chat" class="button mt-20 radius-10">Mulai Chat Bot <i
+                                        class="lni lni-angle-double-right"></i></a>
+                                <a href="#kuesioner" class="button mt-20 radius-10"
+                                    style="background:#f1f1f1;color:#111;">
+                                    Cek Kesehatan Mental <i class="lni lni-checkmark-circle"></i>
+                                </a>
+                            </div>
+
+                            <!-- Privasi -->
+                            <p class="mt-3" style="font-size:.95rem;opacity:.9;">
+                                🔒 Privasi kamu penting. Hindari membagikan data sensitif (NIK, password). Jika merasa
+                                tidak aman atau ingin bicara dengan manusia,
+                                silakan <a href="#konseling">hubungi konselor</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ilustrasi -->
+                <div class="col-xl-4 col-lg-4 order-1" id="content-1">
+                    <div class="about-img text-lg-right animate__animated animate__fadeInUp wow"
+                        data-wow-duration="1.5s">
+                        <div class="image-container">
+                            <img id="foto-rektor" src="/assets/img/vector/11.png"
+                                alt="Ilustrasi Ruang Curhat Si Pental"
+                                style="width:500px;height:500px;object-fit:contain;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
 
     <section id="" class="about-section pt-10 pb-10">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12">
-                    <h1 class="mb-25 text-center ">Kerjasama UINSU</h1>
+                    <h1 class="mb-25 text-center">Illustrasi Kesehatan Mental</h1>
                 </div>
                 <div class="col-xl-12 col-lg-12">
                     <div class="about-content animate__animated animate__fadeInUp wow" data-wow-duration="1.5s">
+
                         <a href="#" alt="Mythrill" target="_blank">
                             <div class="cards">
                                 <div class="wrapper">
-                                    <img src="/assets/img/kerjasama/1.png" class="cover-image" />
+                                    <img src="/assets/img/vector/1.png" class="cover-image" />
                                 </div>
-                                <!-- <img src="/assets/img/kerjasama/1.1.png" class="title" /> -->
-                                <img src="/assets/img/kerjasama/1-1.png" class="character" />
+                                <img src="/assets/img/vector/1.png" class="character" />
                             </div>
                         </a>
 
                         <a href="#" alt="Mythrill" target="_blank">
                             <div class="cards">
                                 <div class="wrapper">
-                                    <img src="/assets/img/kerjasama/5.png" class="cover-image" />
+                                    <img src="/assets/img/vector/2.png" class="cover-image" />
                                 </div>
-                                <!-- <img src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png" class="title" /> -->
-                                <img src="/assets/img/kerjasama/5.png" class="character" />
-                            </div>
-                        </a>
-                        <a href="#" alt="Mythrill" target="_blank">
-                            <div class="cards">
-                                <div class="wrapper">
-                                    <img src="/assets/img/kerjasama/2.png" class="cover-image" />
-                                </div>
-                                <!-- <img src="https://ggayane.github.io/css-experiments/cards/dark_rider-title.png" class="title" /> -->
-                                <img src="/assets/img/kerjasama/2.png" class="character" />
+                                <img src="/assets/img/vector/2.png" class="character" />
                             </div>
                         </a>
 
                         <a href="#" alt="Mythrill" target="_blank">
                             <div class="cards">
                                 <div class="wrapper">
-                                    <img src="/assets/img/kerjasama/4.png" class="cover-image" />
+                                    <img src="/assets/img/vector/3.png" class="cover-image" />
                                 </div>
-                                <!-- <img src="https://ggayane.github.io/css-experiments/cards/force_mage-title.png" class="title" /> -->
-                                <img src="/assets/img/kerjasama/4.png" class="character" />
+                                <img src="/assets/img/vector/3.png" class="character" />
+                            </div>
+                        </a>
+
+                        <a href="#" alt="Mythrill" target="_blank">
+                            <div class="cards">
+                                <div class="wrapper">
+                                    <img src="/assets/img/vector/19.png" class="cover-image" />
+                                </div>
+                                <img src="/assets/img/vector/19.png" class="character" />
+                            </div>
+                        </a>
+
+                        <a href="#" alt="Mythrill" target="_blank">
+                            <div class="cards">
+                                <div class="wrapper">
+                                    <img src="/assets/img/vector/20.png" class="cover-image" />
+                                </div>
+                                <img src="/assets/img/vector/20.png" class="character" />
+                            </div>
+                        </a>
+
+                        <a href="#" alt="Mythrill" target="_blank">
+                            <div class="cards">
+                                <div class="wrapper">
+                                    <img src="/assets/img/vector/8.png" class="cover-image" />
+                                </div>
+                                <img src="/assets/img/vector/8.png" class="character" />
+                            </div>
+                        </a>
+
+                        <a href="#" alt="Mythrill" target="_blank">
+                            <div class="cards">
+                                <div class="wrapper">
+                                    <img src="/assets/img/vector/9.png" class="cover-image" />
+                                </div>
+                                <img src="/assets/img/vector/9.png" class="character" />
+                            </div>
+                        </a>
+
+                        <a href="#" alt="Mythrill" target="_blank">
+                            <div class="cards">
+                                <div class="wrapper">
+                                    <img src="/assets/img/vector/18.png" class="cover-image" />
+                                </div>
+                                <img src="/assets/img/vector/18.png" class="character" />
                             </div>
                         </a>
 
                     </div>
-
                 </div>
             </div>
         </div>
     </section>
+
 
 
     <footer class="footer">
@@ -625,7 +685,8 @@
                     <div class="col-xl-3 col-md-6">
                         <div class="footer-widget">
                             <div class="logo mb-35">
-                                <a href="index.html"> <img src="/assets/img/logo.png" width="200px" alt="">
+                                <a href="index.html"> <img src="/assets/img/logo2.png" width="200px"
+                                        alt="">
                                 </a>
                             </div>
                             <p class="desc mb-35">UIN Sumatera Utara memiliki 8 Fakultas dan 1 Program Pascasarjana.
