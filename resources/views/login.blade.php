@@ -28,10 +28,10 @@
 </head>
 
 <body>
-    <!-- <div class="loader-container" id="loader-container">
+    <div class="loader-container" id="loader-container">
         <div class="loader"></div>
-        <div class="text-loader">My UINSU </div>
-    </div> -->
+        <div class="text-loader">Si Pental </div>
+    </div>
 
     <button class="chatbot-toggler">
         <span class="material-symbols-rounded">mode_comment</span>
@@ -55,27 +55,32 @@
             <img src="/assets/img/logo.png" alt="">
         </div>
         <ul class="top-nav">
-            <li><a class="{{ request()->is('/') ? 'active-nav' : '' }}"
+            <li>
+                <a class="{{ request()->is('/') ? 'active-nav' : '' }}"
                     onclick="window.location.href='index.html';">Beranda</a>
             </li>
-            <li><a class="{{ request()->is('arsip') ? 'active-nav' : '' }}"
-                    onclick="window.location.href='informasi.html';">Informasi</a></li>
-            <li><a class="{{ request()->is('pencarian') ? 'active-nav' : '' }}"
-                    onclick="window.location.href='layanan.html';">Layanan</a></li>
-            <li><a class="{{ request()->is('unggah') ? 'active-nav' : '' }}"
-                    onclick="window.location.href='/dukungan.html';">Dukungan</a></li>
-
             <li>
-                <a class="{{ request()->is('dashboard') ? 'active-nav' : '' }}"
-                    onclick="window.location.href='profil.html';">Profil</a>
+                <a class="{{ request()->is('informasi') ? 'active-nav' : '' }}"
+                    onclick="window.location.href='#content-2';">Informasi</a>
             </li>
 
+            <li>
+                <a class="{{ request()->is('curhat') ? 'active-nav' : '' }}"
+                    onclick="window.location.href='#tentang';">Ruang Curhat</a>
+            </li>
+            <li>
+                <a class="{{ request()->is('kuesioner') ? 'active-nav' : '' }}"
+                    onclick="window.location.href='#kuesioner';">Cek Kesehatan Mental</a>
+            </li>
+            <li>
+                <a class="{{ request()->is('konseling') ? 'active-nav' : '' }}"
+                    onclick="window.location.href='#arsip';">Ruang Konseling</a>
+            </li>
             <li>
                 <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
             </li>
-
-
         </ul>
+
         <div class="profile">
 
 
@@ -244,7 +249,7 @@
                         data-wow-duration="1.5s">
                         <div class="image-container">
                             <img id="foto-rektor" src="/assets/img/vector/13.png" alt=""
-                                style="width:500px;height:500px;object-fit:contain;">
+                                style="width:100%;height:100%;object-fit:contain;">
                         </div>
                     </div>
                 </div>
@@ -290,89 +295,339 @@
                         </p>
                     </div>
                 </div>
+                <!-- ========== SECTION KARTU (dengan tombol buka modal) ========== -->
                 <div class="col-xl-7 col-lg-6">
                     <div class="pricing-active-wrapper animate__animated animate__fadeInUp wow"
                         data-wow-duration="1.5s">
                         <div class="pricing-active">
 
+                            <!-- Bullying -->
                             <div class="single-pricing-wrapper">
                                 <div class="single-pricing">
                                     <h4>Bullying</h4>
                                     <img src="/assets/img/vector/3.png" alt="Bullying"
                                         style="width:200px;height:200px;object-fit:contain;">
-
                                     <p>Kekerasan verbal, fisik, maupun cyber yang dialami berulang kali.</p>
-                                    <a href="#detail-bullying" class="button radius-30 mt-2">Lihat Informasi <i
-                                            class="bi bi-box-arrow-up-right"></i></a>
+                                    <button type="button" class="button radius-30 mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#modalBullying">
+                                        Lihat Informasi <i class="bi bi-box-arrow-up-right"></i>
+                                    </button>
                                 </div>
                             </div>
 
+                            <!-- Homesick -->
                             <div class="single-pricing-wrapper">
                                 <div class="single-pricing">
                                     <h4>Homesick</h4>
                                     <img src="/assets/img/vector/19.png" alt="Homesick"
                                         style="width:200px;height:200px;object-fit:contain;">
                                     <p>Rasa rindu berlebihan terhadap rumah dan keluarga.</p>
-                                    <a href="#detail-homesick" class="button radius-30 mt-2">Lihat Informasi <i
-                                            class="bi bi-box-arrow-up-right"></i></a>
+                                    <button type="button" class="button radius-30 mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#modalHomesick">
+                                        Lihat Informasi <i class="bi bi-box-arrow-up-right"></i>
+                                    </button>
                                 </div>
                             </div>
 
+                            <!-- Stres Belajar -->
                             <div class="single-pricing-wrapper">
                                 <div class="single-pricing">
                                     <h4>Stres Belajar</h4>
                                     <img src="/assets/img/vector/12.png" alt="Stres Belajar"
                                         style="width:200px;height:200px;object-fit:contain;">
                                     <p>Tekanan akademik atau pekerjaan yang berlebihan.</p>
-                                    <a href="#detail-stres-belajar" class="button radius-30 mt-2">Lihat Informasi <i
-                                            class="bi bi-box-arrow-up-right"></i></a>
+                                    <button type="button" class="button radius-30 mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#modalStresBelajar">
+                                        Lihat Informasi <i class="bi bi-box-arrow-up-right"></i>
+                                    </button>
                                 </div>
                             </div>
 
+                            <!-- Tekanan Sosial -->
                             <div class="single-pricing-wrapper">
                                 <div class="single-pricing">
                                     <h4>Tekanan Sosial</h4>
                                     <img src="/assets/img/vector/16.png" alt="Tekanan Sosial"
                                         style="width:200px;height:200px;object-fit:contain;">
                                     <p>Overthinking dan membandingkan diri dengan orang lain.</p>
-                                    <a href="#detail-tekanan-sosial" class="button radius-30 mt-2">Lihat Informasi <i
-                                            class="bi bi-box-arrow-up-right"></i></a>
+                                    <button type="button" class="button radius-30 mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#modalTekananSosial">
+                                        Lihat Informasi <i class="bi bi-box-arrow-up-right"></i>
+                                    </button>
                                 </div>
                             </div>
 
+                            <!-- Trauma Masa Lalu -->
                             <div class="single-pricing-wrapper">
                                 <div class="single-pricing">
                                     <h4>Trauma Masa Lalu</h4>
                                     <img src="/assets/img/vector/18.png" alt="Trauma Masa Lalu"
                                         style="width:200px;height:200px;object-fit:contain;">
                                     <p>Pengalaman buruk seperti kekerasan, kecelakaan, atau kehilangan.</p>
-                                    <a href="#detail-trauma" class="button radius-30 mt-2">Lihat Informasi <i
-                                            class="bi bi-box-arrow-up-right"></i></a>
+                                    <button type="button" class="button radius-30 mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#modalTrauma">
+                                        Lihat Informasi <i class="bi bi-box-arrow-up-right"></i>
+                                    </button>
                                 </div>
                             </div>
 
+                            <!-- Penyalahgunaan Zat -->
                             <div class="single-pricing-wrapper">
                                 <div class="single-pricing">
                                     <h4>Penyalahgunaan Zat</h4>
                                     <img src="/assets/img/vector/5.webp" alt="Penyalahgunaan Zat"
                                         style="width:200px;height:200px;object-fit:contain;">
                                     <p>Penggunaan alkohol atau narkoba yang memicu depresi dan kecemasan.</p>
-                                    <a href="#detail-zat" class="button radius-30 mt-2">Lihat Informasi <i
-                                            class="bi bi-box-arrow-up-right"></i></a>
+                                    <button type="button" class="button radius-30 mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#modalZat">
+                                        Lihat Informasi <i class="bi bi-box-arrow-up-right"></i>
+                                    </button>
                                 </div>
                             </div>
 
+                            <!-- Lingkungan Tidak Sehat -->
                             <div class="single-pricing-wrapper">
                                 <div class="single-pricing">
                                     <h4>Lingkungan Tidak Sehat</h4>
                                     <img src="/assets/img/vector/20.png" alt="Lingkungan Tidak Sehat"
                                         style="width:200px;height:200px;object-fit:contain;">
                                     <p>Hubungan keluarga atau pertemanan yang toxic.</p>
-                                    <a href="#detail-lingkungan" class="button radius-30 mt-2">Lihat Informasi <i
-                                            class="bi bi-box-arrow-up-right"></i></a>
+                                    <button type="button" class="button radius-30 mt-2" data-bs-toggle="modal"
+                                        data-bs-target="#modalLingkungan">
+                                        Lihat Informasi <i class="bi bi-box-arrow-up-right"></i>
+                                    </button>
                                 </div>
                             </div>
 
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ========== MODALS (Bootstrap) ========== -->
+                <!-- Bullying -->
+                <div class="modal fade" id="modalBullying" tabindex="-1" aria-labelledby="labelBullying"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 shadow">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="labelBullying">Bullying</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Tutup"></button>
+                            </div>
+                            <div class="modal-body p-0">
+                                <div class="card border-0">
+                                    <img src="/assets/img/vector/3.png" class="card-img-top" alt="Bullying">
+                                    <div class="card-body">
+                                        <h6 class="card-subtitle mb-2 text-muted">Ringkasan</h6>
+                                        <p class="card-text">Kekerasan verbal, fisik, maupun cyber yang berulang dapat
+                                            memicu kecemasan, depresi, dan menarik diri.</p>
+                                        <h6 class="card-subtitle mt-3 mb-2 text-muted">Apa yang bisa dilakukan?</h6>
+                                        <ul class="mb-0">
+                                            <li>Simpan bukti dan laporkan ke pihak berwenang/kampus.</li>
+                                            <li>Bangun support system: teman/keluarga/konselor.</li>
+                                            <li>Latihan self-compassion & batasi paparan pelaku di media sosial.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-between">
+                                <a href="#tips" class="btn btn-light">Lihat Tips</a>
+                                <a href="#konseling" class="btn btn-primary">Hubungi Konselor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Homesick -->
+                <div class="modal fade" id="modalHomesick" tabindex="-1" aria-labelledby="labelHomesick"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 shadow">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="labelHomesick">Homesick</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Tutup"></button>
+                            </div>
+                            <div class="modal-body p-0">
+                                <div class="card border-0">
+                                    <img src="/assets/img/vector/19.png" class="card-img-top" alt="Homesick">
+                                    <div class="card-body">
+                                        <p class="card-text">Rindu rumah berlebihan bisa memengaruhi fokus dan mood.
+                                        </p>
+                                        <ul class="mb-0">
+                                            <li>Buat rutinitas harian sederhana & jadwal video call.</li>
+                                            <li>Hias kamar/ruang dengan hal yang mengingatkan rumah (aroma, foto).</li>
+                                            <li>Ikut komunitas/kegiatan kampus untuk relasi baru.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-between">
+                                <a href="#tips" class="btn btn-light">Lihat Tips</a>
+                                <a href="#konseling" class="btn btn-primary">Hubungi Konselor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stres Belajar -->
+                <div class="modal fade" id="modalStresBelajar" tabindex="-1" aria-labelledby="labelStresBelajar"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 shadow">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="labelStresBelajar">Stres Belajar</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Tutup"></button>
+                            </div>
+                            <div class="modal-body p-0">
+                                <div class="card border-0">
+                                    <img src="/assets/img/vector/12.png" class="card-img-top" alt="Stres Belajar">
+                                    <div class="card-body">
+                                        <p class="card-text">Tekanan akademik berlebih memicu kelelahan mental dan
+                                            sulit konsentrasi.</p>
+                                        <ul class="mb-0">
+                                            <li>Pakai teknik Pomodoro & jeda napas 4-7-8.</li>
+                                            <li>Pecah target besar jadi tugas kecil harian.</li>
+                                            <li>Jaga tidur/olahraga ringan 15–20 menit.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-between">
+                                <a href="#tips" class="btn btn-light">Lihat Tips</a>
+                                <a href="#konseling" class="btn btn-primary">Hubungi Konselor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tekanan Sosial -->
+                <div class="modal fade" id="modalTekananSosial" tabindex="-1" aria-labelledby="labelTekananSosial"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 shadow">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="labelTekananSosial">Tekanan Sosial</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Tutup"></button>
+                            </div>
+                            <div class="modal-body p-0">
+                                <div class="card border-0">
+                                    <img src="/assets/img/vector/16.png" class="card-img-top" alt="Tekanan Sosial">
+                                    <div class="card-body">
+                                        <p class="card-text">Perbandingan sosial & overthinking menggerus kepercayaan
+                                            diri.</p>
+                                        <ul class="mb-0">
+                                            <li>Batasi scroll media sosial, atur screen time.</li>
+                                            <li>Fokus ke progres diri, bukan hasil orang lain.</li>
+                                            <li>Tulis 3 hal yang disyukuri tiap hari.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-between">
+                                <a href="#tips" class="btn btn-light">Lihat Tips</a>
+                                <a href="#konseling" class="btn btn-primary">Hubungi Konselor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Trauma Masa Lalu -->
+                <div class="modal fade" id="modalTrauma" tabindex="-1" aria-labelledby="labelTrauma"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 shadow">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="labelTrauma">Trauma Masa Lalu</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Tutup"></button>
+                            </div>
+                            <div class="modal-body p-0">
+                                <div class="card border-0">
+                                    <img src="/assets/img/vector/18.png" class="card-img-top" alt="Trauma Masa Lalu">
+                                    <div class="card-body">
+                                        <p class="card-text">Trauma bisa memunculkan flashback/mimpi buruk, butuh
+                                            penanganan bertahap.</p>
+                                        <ul class="mb-0">
+                                            <li>Grounding: 5-4-3-2-1 (indra) saat cemas muncul.</li>
+                                            <li>Jurnal emosi singkat, 5–10 menit per hari.</li>
+                                            <li>Pertimbangkan konseling trauma-informed.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-between">
+                                <a href="#tips" class="btn btn-light">Lihat Tips</a>
+                                <a href="#konseling" class="btn btn-primary">Hubungi Konselor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Penyalahgunaan Zat -->
+                <div class="modal fade" id="modalZat" tabindex="-1" aria-labelledby="labelZat"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 shadow">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="labelZat">Penyalahgunaan Zat</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Tutup"></button>
+                            </div>
+                            <div class="modal-body p-0">
+                                <div class="card border-0">
+                                    <img src="/assets/img/vector/5.webp" class="card-img-top"
+                                        alt="Penyalahgunaan Zat">
+                                    <div class="card-body">
+                                        <p class="card-text">Alkohol/narkoba dapat memperparah depresi & kecemasan, dan
+                                            menimbulkan ketergantungan.</p>
+                                        <ul class="mb-0">
+                                            <li>Kenali pemicu (situasi/lingkungan) dan jauhi.</li>
+                                            <li>Minta dukungan sahabat/keluarga dan komunitas.</li>
+                                            <li>Dapatkan bantuan profesional jika sulit berhenti.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-between">
+                                <a href="#tips" class="btn btn-light">Lihat Tips</a>
+                                <a href="#konseling" class="btn btn-primary">Hubungi Konselor</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lingkungan Tidak Sehat -->
+                <div class="modal fade" id="modalLingkungan" tabindex="-1" aria-labelledby="labelLingkungan"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content border-0 shadow">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="labelLingkungan">Lingkungan Tidak Sehat</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Tutup"></button>
+                            </div>
+                            <div class="modal-body p-0">
+                                <div class="card border-0">
+                                    <img src="/assets/img/vector/20.png" class="card-img-top"
+                                        alt="Lingkungan Tidak Sehat">
+                                    <div class="card-body">
+                                        <p class="card-text">Relasi toxic menurunkan harga diri dan meningkatkan stres.
+                                        </p>
+                                        <ul class="mb-0">
+                                            <li>Tetapkan batasan (boundaries) yang jelas.</li>
+                                            <li>Batasi interaksi, pilih lingkungan suportif.</li>
+                                            <li>Cari bantuan jika terjadi kekerasan/abuse.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer justify-content-between">
+                                <a href="#tips" class="btn btn-light">Lihat Tips</a>
+                                <a href="#konseling" class="btn btn-primary">Hubungi Konselor</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -497,8 +752,11 @@
                         </ul>
 
                         <!-- Tombol ke WhatsApp -->
-                        <a href="https://wa.me/6281234567890" target="_blank" class="button mt-20 radius-10">
-                            Hubungi Konselor via WhatsApp <i class="lni lni-whatsapp"></i>
+                        <a href="https://faq.whatsapp.com/203220822537614" target="_blank"
+                            class="button mt-20 radius-10">
+                            Chat dengan Meta AI di WhatsApp <i class="lni lni-whatsapp"></i>
+                        </a>
+
                         </a>
                     </div>
                 </div>
@@ -544,17 +802,17 @@
 
                             <!-- Quick Prompts -->
                             <div class="mt-3" aria-label="Contoh pertanyaan cepat">
-                                <span class="badge bg-light text-dark me-2 mb-2">“Aku sering overthinking, harus
+                                <span class="badge bg-light text-dark  mb-2">“Aku sering overthinking, harus
                                     gimana?”</span>
-                                <span class="badge bg-light text-dark me-2 mb-2">“Tips biar ga homesick?”</span>
-                                <span class="badge bg-light text-dark me-2 mb-2">“Cara atur tidur dan stres
+                                <span class="badge bg-light text-dark  mb-2">“Tips biar ga homesick?”</span>
+                                <span class="badge bg-light text-dark  mb-2">“Cara atur tidur dan stres
                                     belajar?”</span>
-                                <span class="badge bg-light text-dark me-2 mb-2">“Aku pengen curhat.”</span>
+                                <span class="badge bg-light text-dark  mb-2">“Aku pengen curhat.”</span>
                             </div>
 
                             <!-- CTA -->
                             <div class="d-flex gap-2 flex-wrap">
-                                <a  href="#chat" class="button mt-20 radius-10">Mulai Chat Bot <i
+                                <a href="#chat" class="button mt-20 radius-10">Mulai Chat Bot <i
                                         class="lni lni-angle-double-right"></i></a>
                                 <a href="#kuesioner" class="button mt-20 radius-10"
                                     style="background:#f1f1f1;color:#111;">
@@ -579,7 +837,7 @@
                         <div class="image-container">
                             <img id="foto-rektor" src="/assets/img/vector/11.png"
                                 alt="Ilustrasi Ruang Curhat Si Pental"
-                                style="width:500px;height:500px;object-fit:contain;">
+                                style="width:100%;height:100%;object-fit:contain;">
                         </div>
                     </div>
                 </div>
@@ -587,6 +845,208 @@
             </div>
         </div>
     </section>
+
+    <section id="kuesioner" class="about-section pt-10 pb-10 mb-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12">
+                    <h1 class="mb-25 text-center">Cek Kesehatan Mental Kamu</h1>
+                    <p class="text-center mb-40 h4 text-secondary">Jawab pertanyaan berikut sesuai kondisi kamu
+                        akhir-akhir ini.</p>
+                </div>
+
+                <div class="col-xl-12 col-lg-12">
+                    <!-- Grid pertanyaan -->
+                    <div class="row g-4">
+
+                        <!-- Pertanyaan 1 -->
+                        <div class="col-12 col-md-6">
+                            <div class="question">
+                                <p class="h6 my-2">1. Saya merasa cemas atau khawatir berlebihan tanpa alasan yang
+                                    jelas.</p>
+                                <div class="feedback">
+                                    <label class="angry"><input name="q1" value="1" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
+                                                class="mouth"></svg></div>
+                                    </label>
+                                    <label class="sad"><input name="q1" value="2" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
+                                                class="mouth"></svg></div>
+                                    </label>
+                                    <label class="ok"><input name="q1" value="3" type="radio" />
+                                        <div></div>
+                                    </label>
+                                    <label class="good"><input name="q1" value="4" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
+                                                class="mouth"></svg></div>
+                                    </label>
+                                    <label class="happy"><input name="q1" value="5" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pertanyaan 2 -->
+                        <div class="col-12 col-md-6">
+                            <div class="question">
+                                <p class="h6 my-2">2. Saya sering merasa sedih atau kehilangan semangat dalam
+                                    beraktivitas.</p>
+                                <div class="feedback">
+                                    <label class="angry"><input name="q2" value="1" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
+                                                class="mouth"></svg></div>
+                                    </label>
+                                    <label class="sad"><input name="q2" value="2" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
+                                                class="mouth"></svg></div>
+                                    </label>
+                                    <label class="ok"><input name="q2" value="3" type="radio" />
+                                        <div></div>
+                                    </label>
+                                    <label class="good"><input name="q2" value="4" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
+                                                class="mouth"></svg></div>
+                                    </label>
+                                    <label class="happy"><input name="q2" value="5" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pertanyaan 3 -->
+                        <div class="col-12 col-md-6">
+                            <div class="question">
+                                <p class="h6 my-2">3. Saya sulit tidur atau sering terbangun di malam hari.</p>
+                                <div class="feedback">
+                                    <label class="angry"><input name="q3" value="1" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
+                                                class="mouth"></svg></div>
+                                    </label>
+                                    <label class="sad"><input name="q3" value="2" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
+                                                class="mouth"></svg></div>
+                                    </label>
+                                    <label class="ok"><input name="q3" value="3" type="radio" />
+                                        <div></div>
+                                    </label>
+                                    <label class="good"><input name="q3" value="4" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
+                                                class="mouth"></svg></div>
+                                    </label>
+                                    <label class="happy"><input name="q3" value="5" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pertanyaan 4 -->
+                        <div class="col-12 col-md-6">
+                            <div class="question">
+                                <p class="h6 my-2">4. Saya sering merasa lelah atau kurang energi meskipun tidak banyak
+                                    aktivitas.</p>
+                                <div class="feedback">
+                                    <label class="angry"><input name="q4" value="1" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
+                                                class="mouth"></svg></div>
+                                    </label>
+                                    <label class="sad"><input name="q4" value="2" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
+                                                class="mouth"></svg></div>
+                                    </label>
+                                    <label class="ok"><input name="q4" value="3" type="radio" />
+                                        <div></div>
+                                    </label>
+                                    <label class="good"><input name="q4" value="4" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
+                                                class="mouth"></svg></div>
+                                    </label>
+                                    <label class="happy"><input name="q4" value="5" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pertanyaan 5 -->
+                        <div class="col-12 col-md-6">
+                            <div class="question">
+                                <p class="h6 my-2">5. Saya merasa sulit berkonsentrasi atau fokus pada tugas.</p>
+                                <div class="feedback">
+                                    <label class="angry"><input name="q5" value="1" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
+                                                class="mouth"></svg></div>
+                                    </label>
+                                    <label class="sad"><input name="q5" value="2" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
+                                                class="mouth"></svg></div>
+                                    </label>
+                                    <label class="ok"><input name="q5" value="3" type="radio" />
+                                        <div></div>
+                                    </label>
+                                    <label class="good"><input name="q5" value="4" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
+                                                class="mouth"></svg></div>
+                                    </label>
+                                    <label class="happy"><input name="q5" value="5" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pertanyaan 5 -->
+                        <div class="col-12 col-md-6">
+                            <div class="question">
+                                <p class="h6 my-2">6. Saya merasa sulit berkonsentrasi atau fokus pada pembicaraan.</p>
+                                <div class="feedback">
+                                    <label class="angry"><input name="q6" value="1" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
+                                                class="mouth"></svg></div>
+                                    </label>
+                                    <label class="sad"><input name="q6" value="2" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
+                                                class="mouth"></svg></div>
+                                    </label>
+                                    <label class="ok"><input name="q6" value="3" type="radio" />
+                                        <div></div>
+                                    </label>
+                                    <label class="good"><input name="q6" value="4" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
+                                                class="mouth"></svg></div>
+                                    </label>
+                                    <label class="happy"><input name="q6" value="5" type="radio" />
+                                        <div><svg class="eye left"></svg><svg class="eye right"></svg></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="d-flex gap-2 flex-wrap">
+                    <a href="#chat" class="button mt-20 radius-10">Kirim Jawaban <i
+                            class="lni lni-angle-double-right"></i></a>
+                </div>
+                <!-- SVG defs tetap -->
+                <svg style="display:none;" xmlns="http://www.w3.org/2000/svg">
+                    <symbol id="eye" viewBox="0 0 7 4">
+                        <path
+                            d="M1,1 C1.83333333,2.16666667 2.66666667,2.75 3.5,2.75 C4.33333333,2.75 5.16666667,2.16666667 6,1">
+                        </path>
+                    </symbol>
+                    <symbol id="mouth" viewBox="0 0 18 7">
+                        <path d="M1,5.5 C3.66666667,2.5 6.33333333,1 9,1 C11.6666667,1 14.3333333,2.5 17,5.5"></path>
+                    </symbol>
+                </svg>
+
+            </div>
+        </div>
+    </section>
+
 
 
     <section id="" class="about-section pt-10 pb-10">
@@ -682,81 +1142,76 @@
         <div class="container">
             <div class="widget-wrapper">
                 <div class="row">
+
+                    <!-- Logo & Deskripsi -->
                     <div class="col-xl-3 col-md-6">
                         <div class="footer-widget">
                             <div class="logo mb-35">
-                                <a href="index.html"> <img src="/assets/img/logo2.png" width="200px"
-                                        alt="">
+                                <a href="index.html">
+                                    <img src="/assets/img/logo2.png" width="200px" alt="Logo Si Pental">
                                 </a>
                             </div>
-                            <p class="desc mb-35">UIN Sumatera Utara memiliki 8 Fakultas dan 1 Program Pascasarjana.
-                                UINSU adalah kampus islam yang memiliki moto “Smart Islamic University”</p>
+                            <p class="desc mb-35">
+                                <b>Si Pental</b> (Sistem Informasi Kesehatan Mental) adalah platform yang menyediakan
+                                informasi, tips, ruang curhat (chat bot), cek kesehatan mental, hingga akses konseling
+                                online.
+                                Tujuannya untuk mendukung mahasiswa dan masyarakat dalam menjaga kesehatan mental.
+                            </p>
                             <ul class="socials">
-                                <li>
-                                    <a href="https://www.facebook.com/uinsuofficial/"> <i
-                                            class="lni lni-facebook-filled"></i> </a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/UINSumutMedan"> <i
-                                            class="lni lni-twitter-filled"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/uinsu_official/"> <i
-                                            class="lni lni-instagram-filled"></i> </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.youtube.com/channel/UCu-kpT7tJfg6y2tJ71e1vtQ"> <i
-                                            class="lni lni-youtube"></i> </a>
-                                </li>
+                                <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
+                                <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>
+                                <li><a href="#"><i class="lni lni-instagram-filled"></i></a></li>
+                                <li><a href="#"><i class="lni lni-youtube"></i></a></li>
                             </ul>
                         </div>
                     </div>
 
+                    <!-- Navigasi Cepat -->
                     <div class="col-xl-2 offset-xl-1 col-md-5 offset-md-1 col-sm-6">
                         <div class="footer-widget">
-                            <h3>Link</h3>
+                            <h3>Menu</h3>
                             <ul class="links">
-                                <li> <a href="javascript:void(0)">Beranda</a> </li>
-                                <li> <a href="javascript:void(0)">Informasi</a> </li>
-                                <li> <a href="javascript:void(0)">Layanan</a> </li>
-                                <li> <a href="javascript:void(0)">Dukungan</a> </li>
-                                <li> <a href="javascript:void(0)">Tentang Kami</a> </li>
-                                <li> <a href="javascript:void(0)">Login</a> </li>
+                                <li><a href="#hero">Beranda</a></li>
+                                <li><a href="#content-2">Informasi</a></li>
+                                <li><a href="#penyebab">Penyebab</a></li>
+                                <li><a href="#tanda">Tanda-Tanda</a></li>
+                                <li><a href="#tips">Tips & Trik</a></li>
+                                <li><a href="#tentang">Ruang Curhat</a></li>
+                                <li><a href="#kuesioner">Cek Kesehatan Mental</a></li>
+                                <li><a href="#konseling">Ruang Konseling</a></li>
                             </ul>
                         </div>
                     </div>
 
+                    <!-- Fitur Utama -->
                     <div class="col-xl-3 col-md-6 col-sm-6">
                         <div class="footer-widget">
-                            <h3>Layanan</h3>
+                            <h3>Fitur Utama</h3>
                             <ul class="links">
-                                <li> <a href="javascript:void(0)">Portal SIA</a> </li>
-                                <li> <a href="javascript:void(0)">SI-SELMA</a> </li>
-                                <li> <a href="javascript:void(0)">E-LEARNING</a> </li>
-                                <li> <a href="javascript:void(0)">SI-JURNAL</a> </li>
-                                <li> <a href="javascript:void(0)">Repository</a> </li>
-                                <li> <a href="javascript:void(0)">SI-DAHLIA</a> </li>
-                                <li> <a href="javascript:void(0)">SI-PERPUS</a> </li>
+                                <li><a href="#content-2">Informasi Kesehatan Mental</a></li>
+                                <li><a href="#penyebab">Penyebab Gangguan Mental</a></li>
+                                <li><a href="#tanda">Tanda-Tanda Gangguan</a></li>
+                                <li><a href="#tips">Tips Menjaga Mental</a></li>
+                                <li><a href="#tentang">Ruang Curhat (Chat Bot)</a></li>
+                                <li><a href="#kuesioner">Cek Kesehatan Mental</a></li>
+                                <li><a href="#konseling">Konseling Online</a></li>
                             </ul>
                         </div>
                     </div>
 
+                    <!-- Galeri Mini -->
                     <div class="col-xl-3 col-md-6">
                         <div class="footer-widget">
-                            <h3>Kontak</h3>
-                            <ul>
-
-                                <li>humas@uinsu.ac.id</li>
-                                <li>Jl. Willem Iskandar Pasar V, Medan Estate</li>
-                            </ul>
-                            <div class="contact_map" style="width: 100%; height: 150px; margin-top: 25px;">
-                                <div class="gmap_canvas">
-                                    <iframe id="gmap_canvas"
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.923855729958!2d98.71849827371673!3d3.604906850184647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3031316be49d74e9%3A0x2f82fd7c9bd27f!2sUniversitas%20Islam%20Negeri%20Sumatera%20Utara%20Medan!5e0!3m2!1sid!2sid!4v1711774604762!5m2!1sid!2sid"
-                                        style="width: 100%;"></iframe>
-
-                                </div>
+                            <h3>Galeri</h3>
+                            <div class="d-flex flex-wrap gap-2">
+                                <img src="https://uinsu.ac.id/wp-content/uploads/2024/02/uin.png" alt="Galeri 1"
+                                    style="width:200px; height:auto; object-fit:contain;">
+                                <img src="https://uinsu.ac.id/wp-content/uploads/2024/05/Gambar-WhatsApp-2024-05-02-pukul-15.53.09_3a0cc0eb.jpg"
+                                    alt="Galeri 2" style="width:200px; height:auto; object-fit:cover;">
+                                <img src="https://uinsu.ac.id/wp-content/uploads/2024/02/2-11.jpg" alt="Galeri 3"
+                                    style="width:200px; height:auto; object-fit:cover;">
+                                <img src="https://tracerstudy.uinsu.ac.id/img/logo.png" alt="Galeri 4"
+                                    style="width:200px; height:auto; object-fit:contain;">
                             </div>
                         </div>
                     </div>
@@ -764,13 +1219,18 @@
                 </div>
             </div>
 
-            <div class="copy-right">
-                <p>Copyright © 2025 <a href="https://uinsu.ac.id/" rel="nofollow" target="_blank"> UIN Sumatera Utara
-                        Medan </a></p>
-            </div>
+            <!-- Flag Counter lama -->
+            <a href="https://info.flagcounter.com/a6uQ"><img
+                    src="https://s01.flagcounter.com/count2/a6uQ/bg_FFFFFF/txt_000000/border_FFFFFF/columns_2/maxflags_10/viewers_Pengunjung/labels_0/pageviews_0/flags_0/percent_0/"
+                    alt="Flag Counter" border="0"></a>
 
+            <div class="copy-right">
+                <p>Copyright © 2025 <a href="#">Si Pental</a> | Sistem Informasi Kesehatan Mental</p>
+            </div>
         </div>
     </footer>
+
+
 
     <a href="#" class="scroll-top btn-hover">
         <i class="lni lni-chevron-up"></i>
