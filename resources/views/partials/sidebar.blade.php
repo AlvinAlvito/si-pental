@@ -4,7 +4,7 @@
             <img src="/images/logo.jpg"  alt="">
         </div>
 
-        <span class="logo_name">Pembelajaran Biologi</span>
+        <span class="logo_name">Admin</span>
     </div>
 
     <div class="menu-items">
@@ -16,23 +16,18 @@
                 </a>
             </li>
              <li >
-                <a href="/admin/data-materi" class="{{ Request::is('/admin/data-materi') ? 'active' : '' }}">
+                <a href="/admin/questioner" class="{{ Request::is('/admin/questioner') ? 'active' : '' }}">
                     <i class="uil uil-chart"></i>
-                    <span class="link-name">Data Materi</span>
+                    <span class="link-name">Data Questioner</span>
                 </a>
             </li>
             <li >
-                <a href="/admin/data-soal" class="{{ Request::is('/admin/data-soal') ? 'active' : '' }}">
+                <a href="/admin/responder" class="{{ Request::is('/admin/responder') ? 'active' : '' }}">
                     <i class="uil uil-files-landscapes"></i>
-                    <span class="link-name">Data Quiz</span>
+                    <span class="link-name">Data Responder</span>
                 </a>
             </li>
-             <li >
-                <a href="/admin/data-siswa" class="{{ Request::is('/admin/data-siswa') ? 'active' : '' }}">
-                    <i class="uil uil-files-landscapes"></i>
-                    <span class="link-name">Data Siswa</span>
-                </a>
-            </li>
+
            
         </ul>
         

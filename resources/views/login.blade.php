@@ -66,7 +66,7 @@
                 <a href="#ruang">Ruang Curhat</a>
             </li>
             <li>
-                <a href="#cek">Cek Kesehatan Mental</a>
+                <a href="/questioner">Cek Kesehatan Mental</a>
             </li>
             <li>
                 <a href="#konseling">Ruang Konseling</a>
@@ -136,7 +136,7 @@
             </li>
 
             <li>
-                <a href="javascript:void(0)" onclick="window.location.href='#cek'">
+                <a href="javascript:void(0)" onclick="window.location.href='/questioner'">
                     <i class='bi bi-chat-square-text icon'></i>
                     <i class='bi bi-chat-square-text-fill activeIcon'></i>
                 </a>
@@ -1485,207 +1485,57 @@
         </div>
     </section>
 
-    <section id="kuesioner" class="about-section pt-10 pb-10 mb-4">
-        <div id="cek" class="container">
+    <section id="konseling" class="about-section pt-10 pb-10" style="background: url('/assets/img/bg3.jpg');">
+        <div id="ruang" class="container">
             <div class="row align-items-center">
-                <div class="col-12">
-                    <h1 class="mb-25 text-center">Cek Kesehatan Mental Kamu</h1>
-                    <p class="text-center mb-40 h4 text-secondary">Jawab pertanyaan berikut sesuai kondisi kamu
-                        akhir-akhir ini.</p>
-                </div>
 
-                <div class="col-xl-12 col-lg-12">
-                    <!-- Grid pertanyaan -->
-                    <div class="row g-4">
-
-                        <!-- Pertanyaan 1 -->
-                        <div class="col-12 col-md-6">
-                            <div class="question">
-                                <p class="h6 my-2">1. Saya merasa cemas atau khawatir berlebihan tanpa alasan yang
-                                    jelas.</p>
-                                <div class="feedback">
-                                    <label class="angry"><input name="q1" value="1" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
-                                                class="mouth"></svg></div>
-                                    </label>
-                                    <label class="sad"><input name="q1" value="2" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
-                                                class="mouth"></svg></div>
-                                    </label>
-                                    <label class="ok"><input name="q1" value="3" type="radio" />
-                                        <div></div>
-                                    </label>
-                                    <label class="good"><input name="q1" value="4" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
-                                                class="mouth"></svg></div>
-                                    </label>
-                                    <label class="happy"><input name="q1" value="5" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg></div>
-                                    </label>
-                                </div>
-                            </div>
+                 <!-- Gambar Samping -->
+                <div class="col-xl-6 col-lg-6">
+                    <div class="about-img text-lg-right animate__animated animate__fadeInUp wow"
+                        data-wow-duration="1.5s">
+                        <div class="image-container">
+                            <img id="support" src="/assets/img/vector/10.png" alt="">
                         </div>
-
-                        <!-- Pertanyaan 2 -->
-                        <div class="col-12 col-md-6">
-                            <div class="question">
-                                <p class="h6 my-2">2. Saya sering merasa sedih atau kehilangan semangat dalam
-                                    beraktivitas.</p>
-                                <div class="feedback">
-                                    <label class="angry"><input name="q2" value="1" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
-                                                class="mouth"></svg></div>
-                                    </label>
-                                    <label class="sad"><input name="q2" value="2" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
-                                                class="mouth"></svg></div>
-                                    </label>
-                                    <label class="ok"><input name="q2" value="3" type="radio" />
-                                        <div></div>
-                                    </label>
-                                    <label class="good"><input name="q2" value="4" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
-                                                class="mouth"></svg></div>
-                                    </label>
-                                    <label class="happy"><input name="q2" value="5" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg></div>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pertanyaan 3 -->
-                        <div class="col-12 col-md-6">
-                            <div class="question">
-                                <p class="h6 my-2">3. Saya sulit tidur atau sering terbangun di malam hari.</p>
-                                <div class="feedback">
-                                    <label class="angry"><input name="q3" value="1" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
-                                                class="mouth"></svg></div>
-                                    </label>
-                                    <label class="sad"><input name="q3" value="2" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
-                                                class="mouth"></svg></div>
-                                    </label>
-                                    <label class="ok"><input name="q3" value="3" type="radio" />
-                                        <div></div>
-                                    </label>
-                                    <label class="good"><input name="q3" value="4" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
-                                                class="mouth"></svg></div>
-                                    </label>
-                                    <label class="happy"><input name="q3" value="5" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg></div>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pertanyaan 4 -->
-                        <div class="col-12 col-md-6">
-                            <div class="question">
-                                <p class="h6 my-2">4. Saya sering merasa lelah atau kurang energi meskipun tidak banyak
-                                    aktivitas.</p>
-                                <div class="feedback">
-                                    <label class="angry"><input name="q4" value="1" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
-                                                class="mouth"></svg></div>
-                                    </label>
-                                    <label class="sad"><input name="q4" value="2" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
-                                                class="mouth"></svg></div>
-                                    </label>
-                                    <label class="ok"><input name="q4" value="3" type="radio" />
-                                        <div></div>
-                                    </label>
-                                    <label class="good"><input name="q4" value="4" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
-                                                class="mouth"></svg></div>
-                                    </label>
-                                    <label class="happy"><input name="q4" value="5" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg></div>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pertanyaan 5 -->
-                        <div class="col-12 col-md-6">
-                            <div class="question">
-                                <p class="h6 my-2">5. Saya merasa sulit berkonsentrasi atau fokus pada tugas.</p>
-                                <div class="feedback">
-                                    <label class="angry"><input name="q5" value="1" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
-                                                class="mouth"></svg></div>
-                                    </label>
-                                    <label class="sad"><input name="q5" value="2" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
-                                                class="mouth"></svg></div>
-                                    </label>
-                                    <label class="ok"><input name="q5" value="3" type="radio" />
-                                        <div></div>
-                                    </label>
-                                    <label class="good"><input name="q5" value="4" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
-                                                class="mouth"></svg></div>
-                                    </label>
-                                    <label class="happy"><input name="q5" value="5" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg></div>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Pertanyaan 5 -->
-                        <div class="col-12 col-md-6">
-                            <div class="question">
-                                <p class="h6 my-2">6. Saya merasa sulit berkonsentrasi atau fokus pada pembicaraan.</p>
-                                <div class="feedback">
-                                    <label class="angry"><input name="q6" value="1" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
-                                                class="mouth"></svg></div>
-                                    </label>
-                                    <label class="sad"><input name="q6" value="2" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
-                                                class="mouth"></svg></div>
-                                    </label>
-                                    <label class="ok"><input name="q6" value="3" type="radio" />
-                                        <div></div>
-                                    </label>
-                                    <label class="good"><input name="q6" value="4" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg><svg
-                                                class="mouth"></svg></div>
-                                    </label>
-                                    <label class="happy"><input name="q6" value="5" type="radio" />
-                                        <div><svg class="eye left"></svg><svg class="eye right"></svg></div>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-
                     </div>
                 </div>
-                <div class="d-flex gap-2 flex-wrap">
-                    <a href="#chat" class="button mt-20 radius-10">Kirim Jawaban <i
-                            class="lni lni-angle-double-right"></i></a>
+
+                <!-- Konten Konseling -->
+                <div class="col-xl-6 col-lg-6">
+                    <div class="about-content animate__animated animate__fadeInUp wow" data-wow-duration="1.5s">
+                        <div class="section-title mb-30">
+                            <h1 class="mb-25">Cek Kesehatan Mental Kamu</h1>
+                            <p class="">
+                                Si Pental menyediakan layanan konseling untuk membantu kamu yang sedang menghadapi
+                                masalah
+                                kesehatan mental, seperti stres belajar, kecemasan, atau tekanan sosial.
+                                Kamu bisa terhubung langsung dengan konselor melalui WhatsApp.
+                            </p>
+                        </div>
+
+                        <ul>
+                            <li class=""><i class="lni lni-checkmark-circle"></i> Konseling privat dengan
+                                konselor</li>
+                            <li class=""><i class="lni lni-checkmark-circle"></i> Diskusi ringan untuk kelola
+                                stres & emosi</li>
+                            <li class=""><i class="lni lni-checkmark-circle"></i> Rekomendasi langkah lanjutan
+                            </li>
+                            <li class=""><i class="lni lni-checkmark-circle"></i> Gratis & rahasia terjaga</li>
+                        </ul>
+
+                        <!-- Tombol ke WhatsApp -->
+                        <a href="/questioner" target="_blank" class="button mt-20 radius-10">
+                            Cek Kesehatan Mental Kamu Sekarang <i class="lni lni-angle-double-right"></i>
+                        </a>
+
+                        </a>
+                    </div>
                 </div>
-                <!-- SVG defs tetap -->
-                <svg style="display:none;" xmlns="http://www.w3.org/2000/svg">
-                    <symbol id="eye" viewBox="0 0 7 4">
-                        <path
-                            d="M1,1 C1.83333333,2.16666667 2.66666667,2.75 3.5,2.75 C4.33333333,2.75 5.16666667,2.16666667 6,1">
-                        </path>
-                    </symbol>
-                    <symbol id="mouth" viewBox="0 0 18 7">
-                        <path d="M1,5.5 C3.66666667,2.5 6.33333333,1 9,1 C11.6666667,1 14.3333333,2.5 17,5.5"></path>
-                    </symbol>
-                </svg>
+
+               
 
             </div>
         </div>
     </section>
-
 
 
     <section id="" class="about-section pt-10 pb-10">
