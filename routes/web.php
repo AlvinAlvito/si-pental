@@ -87,6 +87,10 @@ Route::delete('/admin/responder/{id}', function ($id) {
     if (!session('is_admin')) return redirect('/');
     return app(ResponderController::class)->destroy($id);
 })->name('responder.destroy');
+Route::get('/admin/responder/{id}', function ($id) {
+    if (!session('is_admin')) return redirect('/');
+    return app(ResponderController::class)->show($id);
+})->name('responder.show');
 
 Route::get('/admin/responder/export/pdf', function (Request $request) {
     if (!session('is_admin')) return redirect('/');

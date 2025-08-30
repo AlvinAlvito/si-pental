@@ -29,6 +29,70 @@ class ResponderController extends Controller
         return view('admin.responder', compact('responses', 'q'));
     }
 
+public function show($id)
+{
+    $responder = Response::with('answers')->findOrFail($id);
+
+    // Hitung skor kategori & jumlah pertanyaan
+    $n = $responder->answers->count();
+    $min = 1 * $n;
+    $max = 5 * $n;
+
+    // Interpretasi sederhana
+    if ($responder->total_score <= $min + 0.4 * ($max - $min)) {
+        $interpret = 'Kesehatan mental rendah';
+    } elseif ($responder->total_score <= $min + 0.6 * ($max - $min)) {
+        $interpret = 'Kesehatan mental sedang';
+    } else {
+        $interpret = 'Kesehatan mental baik';
+    }
+
+    // Mapping kategori (gunakan bahasa yang lebih rapi)
+    $catLabelsMap = [
+        'emotional'    => 'Kesejahteraan Emosional',
+        'stress'       => 'Stres & Kecemasan',
+        'social'       => 'Hubungan Sosial',
+        'self_control' => 'Pengendalian Diri & Perilaku',
+    ];
+
+    // Urutan kategori
+    $catOrder = array_keys($catLabelsMap);
+
+    // Hitung total skor per kategori
+    $catTotals = [];
+    foreach ($catOrder as $cat) {
+        $catTotals[$cat] = $responder->answers->where('category', $cat)->sum('score');
+    }
+
+    // Siapkan data untuk Radar Chart (rata-rata per kategori)
+    $radarSeries = [];
+    $radarCategories = [];
+    foreach ($catOrder as $cat) {
+        $count = $responder->answers->where('category', $cat)->count();
+        $avg   = $count ? round($catTotals[$cat] / $count, 2) : 0;
+        $radarSeries[] = $avg;
+        $radarCategories[] = $catLabelsMap[$cat];
+    }
+
+    $genderLabel = $responder->gender === 'male' ? 'Laki-laki'
+        : ($responder->gender === 'female' ? 'Perempuan' : 'Lainnya');
+
+    return view('admin.responder_show', compact(
+        'responder',
+        'genderLabel',
+        'interpret',
+        'n',
+        'min',
+        'max',
+        'catLabelsMap',
+        'catOrder',
+        'catTotals',
+        'radarSeries',
+        'radarCategories'
+    ));
+}
+
+
     public function destroy($id)
     {
         $response = Response::with('answers')->findOrFail($id);
@@ -42,7 +106,6 @@ class ResponderController extends Controller
     {
         $q = $request->q;
 
-        // Ambil semua data (tanpa paginate) sesuai filter pencarian
         $responses = Response::withCount('answers')
             ->when($q, function ($query) use ($q) {
                 $query->where(function ($w) use ($q) {

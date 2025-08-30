@@ -71,7 +71,7 @@
                                 <tr>
                                     <td>{{ $rowNo }}</td>
                                     <td class="fw-semibold">
-                                        <a href="{{ route('questioner.result', $r->id) }}" class="text-decoration-none">
+                                        <a href="{{ route('responder.show', $r->id) }}" class="text-decoration-none">
                                             {{ $r->name }}
                                         </a>
                                     </td>
@@ -85,10 +85,10 @@
                                     <td>
                                         <div class="d-flex gap-2">
                                             <a class="btn btn-sm btn-outline-secondary"
-                                                href="{{ route('questioner.result', $r->id) }}" title="Lihat detail">
+                                                href="{{ route('responder.show', $r->id) }}" title="Lihat detail">
                                                 <i class="bi bi-box-arrow-up-right"></i> Lihat
                                             </a>
-                                            <form action="{{ route('responder.destroy', $r->id) }}" method="POST"
+                                            <form action="{{ route('responder.show', $r->id) }}" method="POST"
                                                 onsubmit="return confirm('Yakin ingin menghapus responder ini?')">
                                                 @csrf
                                                 @method('DELETE')
