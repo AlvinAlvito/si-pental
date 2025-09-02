@@ -10,7 +10,7 @@
       <input type="text" placeholder="Search here..." oninput="filterQuestions(this.value)">
     </div>
 
-    <img src="/images/profil.png" alt="">
+    <img src="/images/uinsu.jpg" alt="">
   </div>
 
   <div class="dash-content">

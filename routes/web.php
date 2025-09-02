@@ -16,6 +16,10 @@ Route::get('/', function () {
     return view('login');
 })->name('login');
 
+Route::get('/profil', function () {
+    return view('profil');
+})->name('profil');
+
 
 // Di Public
 Route::get('/questioner', [QuestionerController::class, 'create'])->name('questioner');
@@ -92,7 +96,7 @@ Route::get('/admin/responder/{id}', function ($id) {
     return app(ResponderController::class)->show($id);
 })->name('responder.show');
 
-Route::get('/admin/responder/export/pdf', function (Request $request) {
+Route::get('/admin/responder-export', function (Request $request) {
     if (!session('is_admin')) return redirect('/');
-    return app(ResponderController::class)->exportPdf($request);
-})->name('responder.export.pdf');
+    return app(ResponderController::class)->exportCsv($request);
+})->name('responder.export.excel');

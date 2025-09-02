@@ -50,29 +50,9 @@
         <div class="logo">
             <img src="/assets/img/logo.png" alt="">
         </div>
-        <ul class="top-nav">
-            <li>
-                <a href="#">Beranda</a>
-            </li>
-            <li>
-                <a href="#informasi">Informasi</a>
-            </li>
+       
 
-            <li>
-                <a href="#ruang">Ruang Curhat</a>
-            </li>
-            <li>
-                <a href="#cek">Cek Kesehatan Mental</a>
-            </li>
-            <li>
-                <a href="#konseling">Ruang Konseling</a>
-            </li>
-            <li>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
-            </li>
-        </ul>
-
-        <div class="profile">
+        <div data-bs-toggle="modal" data-bs-target="#loginModal" class="profile">
 
 
             <img class="rounded-circle" src="/assets/img/account.png" alt="" style="width: 35px; height: 35px;">
@@ -126,7 +106,7 @@
             </li>
 
             <li>
-                <a href="javascript:void(0)">
+                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#loginModal">
                     <img class="icon-home" src="/assets/img/icon-home2.png" alt="">
                 </a>
             </li>
@@ -139,7 +119,7 @@
             </li>
 
             <li>
-                <a href="javascript:void(0)" onclick="window.location.href='/'">
+                <a href="javascript:void(0)" onclick="window.location.href='/profil'">
                     <i class='bi bi-person icon'></i>
                     <i class='bi bi-person-fill activeIcon'></i>
                 </a>

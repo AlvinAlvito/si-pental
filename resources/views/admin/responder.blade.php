@@ -15,7 +15,7 @@
                 <input type="text" id="dt-global-search" placeholder="Search Here..">
             </div>
 
-            <img src="/images/profil.png" alt="">
+            <img src="/images/uinsu.jpg" alt="">
         </div>
 
         <div class="dash-content">
@@ -28,9 +28,10 @@
                 </div>
                 <div class="d-flex gap-2">
                     {{-- Jika pakai search q, ikutkan di link agar hasil PDF terfilter sama --}}
-                    <a href="{{ route('responder.export.pdf', ['q' => $q]) }}" class="btn btn-outline-primary">
-                        <i class="bi bi-file-pdf"></i> Download PDF
+                    <a href="{{ route('responder.export.excel', ['q' => $q]) }}" class="btn btn-outline-success">
+                        <i class="bi bi-file-earmark-spreadsheet"></i> Download CSV (Excel)
                     </a>
+
                 </div>
 
                 @if (session('success'))

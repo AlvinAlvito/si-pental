@@ -54,29 +54,9 @@
         <div class="logo">
             <img src="/assets/img/logo.png" alt="">
         </div>
-        <ul class="top-nav">
-            <li>
-                <a href="#">Beranda</a>
-            </li>
-            <li>
-                <a href="#informasi">Informasi</a>
-            </li>
 
-            <li>
-                <a href="#ruang">Ruang Curhat</a>
-            </li>
-            <li>
-                <a href="/questioner">Cek Kesehatan Mental</a>
-            </li>
-            <li>
-                <a href="#konseling">Ruang Konseling</a>
-            </li>
-            <li>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
-            </li>
-        </ul>
 
-        <div class="profile">
+        <div class="profile" data-bs-toggle="modal" data-bs-target="#loginModal">
 
 
             <img class="rounded-circle" src="/assets/img/account.png" alt="" style="width: 35px; height: 35px;">
@@ -95,7 +75,7 @@
                 </div>
                 <div class="modal-body">
                     @if ($errors->has('login'))
-                    <div class="alert alert-danger">{{ $errors->first('login') }}</div>
+                        <div class="alert alert-danger">{{ $errors->first('login') }}</div>
                     @endif
                     <div class="mb-3">
                         <label>Username:</label>
@@ -130,7 +110,7 @@
             </li>
 
             <li>
-                <a href="javascript:void(0)">
+                <a href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#loginModal">
                     <img class="icon-home" src="/assets/img/icon-home2.png" alt="">
                 </a>
             </li>
@@ -143,7 +123,7 @@
             </li>
 
             <li>
-                <a href="javascript:void(0)" onclick="window.location.href='#profil'">
+                <a href="javascript:void(0)" onclick="window.location.href='/profil'">
                     <i class='bi bi-person icon'></i>
                     <i class='bi bi-person-fill activeIcon'></i>
                 </a>
@@ -186,7 +166,7 @@
                                             </div>
                                             <p class="text">Penyebab Gangguan</p>
                                         </div>
-                                    </div> 
+                                    </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="single-counter counter-color-2 d-flex wow fadeInUp"
@@ -201,7 +181,7 @@
                                             </div>
                                             <p class="text">Tanda-Tanda</p>
                                         </div>
-                                    </div> 
+                                    </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="single-counter counter-color-3 d-flex wow fadeInUp"
@@ -291,7 +271,8 @@
                             <div class="modal-body p-0">
                                 <div class="card border-0">
                                     <!-- Opsional: ilustrasi kecil -->
-                                    <img src="/assets/img/vector/9.png" class="card-img-top" alt="Ilustrasi Si Pental"
+                                    <img src="/assets/img/vector/9.png" class="card-img-top"
+                                        alt="Ilustrasi Si Pental"
                                         style="max-height:220px; object-fit:contain; padding:12px;">
                                     <div class="card-body">
                                         <p class="mb-3">
@@ -728,8 +709,8 @@
 
                             <div class="modal-body p-0">
                                 <div class="card border-0">
-                                    <img src="/assets/img/vector/16.png" class="card-img-top p-3" alt="Tekanan Sosial"
-                                        style="max-height:180px; object-fit:contain;">
+                                    <img src="/assets/img/vector/16.png" class="card-img-top p-3"
+                                        alt="Tekanan Sosial" style="max-height:180px; object-fit:contain;">
                                     <div class="card-body">
 
                                         <h6 class="card-subtitle mb-2 text-muted">Apa itu Tekanan Sosial?</h6>
@@ -784,7 +765,8 @@
                 </div>
 
                 <!-- Trauma Masa Lalu -->
-                <div class="modal fade" id="modalTrauma" tabindex="-1" aria-labelledby="labelTrauma" aria-hidden="true">
+                <div class="modal fade" id="modalTrauma" tabindex="-1" aria-labelledby="labelTrauma"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
@@ -795,8 +777,8 @@
 
                             <div class="modal-body p-0">
                                 <div class="card border-0">
-                                    <img src="/assets/img/vector/18.png" class="card-img-top p-3" alt="Trauma Masa Lalu"
-                                        style="max-height:180px; object-fit:contain;">
+                                    <img src="/assets/img/vector/18.png" class="card-img-top p-3"
+                                        alt="Trauma Masa Lalu" style="max-height:180px; object-fit:contain;">
                                     <div class="card-body">
 
                                         <h6 class="card-subtitle mb-2 text-muted">Apa itu Trauma Masa Lalu?</h6>
@@ -843,7 +825,8 @@
                 </div>
 
                 <!-- Penyalahgunaan Zat -->
-                <div class="modal fade" id="modalZat" tabindex="-1" aria-labelledby="labelZat" aria-hidden="true">
+                <div class="modal fade" id="modalZat" tabindex="-1" aria-labelledby="labelZat"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
@@ -933,7 +916,8 @@
                                             Hal ini dapat menggerus rasa aman dan harga diri.
                                         </p>
 
-                                        <h6 class="card-subtitle mt-3 mb-2 text-muted">Tanda Lingkungan Tidak Sehat</h6>
+                                        <h6 class="card-subtitle mt-3 mb-2 text-muted">Tanda Lingkungan Tidak Sehat
+                                        </h6>
                                         <ul>
                                             <li>Sering merasa takut, cemas, atau tidak nyaman saat berinteraksi.</li>
                                             <li>Dikritik atau diremehkan secara berlebihan.</li>
@@ -1060,7 +1044,8 @@
                 <!-- ===== MODALS (letakkan di akhir body untuk menghindari z-index issues) ===== -->
 
                 <!-- Modal: Cemas Berlebihan -->
-                <div class="modal fade" id="modalCemas" tabindex="-1" aria-labelledby="labelCemas" aria-hidden="true">
+                <div class="modal fade" id="modalCemas" tabindex="-1" aria-labelledby="labelCemas"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
@@ -1107,7 +1092,8 @@
                 </div>
 
                 <!-- Modal: Gangguan Tidur -->
-                <div class="modal fade" id="modalTidur" tabindex="-1" aria-labelledby="labelTidur" aria-hidden="true">
+                <div class="modal fade" id="modalTidur" tabindex="-1" aria-labelledby="labelTidur"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
@@ -1153,7 +1139,8 @@
                 </div>
 
                 <!-- Modal: Kehilangan Minat -->
-                <div class="modal fade" id="modalMinat" tabindex="-1" aria-labelledby="labelMinat" aria-hidden="true">
+                <div class="modal fade" id="modalMinat" tabindex="-1" aria-labelledby="labelMinat"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
@@ -1244,7 +1231,8 @@
                 </div>
 
                 <!-- Modal: Emosi Tidak Stabil -->
-                <div class="modal fade" id="modalEmosi" tabindex="-1" aria-labelledby="labelEmosi" aria-hidden="true">
+                <div class="modal fade" id="modalEmosi" tabindex="-1" aria-labelledby="labelEmosi"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
@@ -1254,7 +1242,8 @@
                             </div>
                             <div class="modal-body p-0">
                                 <div class="card border-0">
-                                    <img src="/assets/img/vector/20.png" class="card-img-top" alt="Emosi Tidak Stabil">
+                                    <img src="/assets/img/vector/20.png" class="card-img-top"
+                                        alt="Emosi Tidak Stabil">
                                     <div class="card-body">
                                         <h6 class="card-subtitle mb-2 text-muted">Ringkasan</h6>
                                         <p>
@@ -1313,7 +1302,8 @@
                 </div>
 
                 <!-- Modal Tips -->
-                <div class="modal fade" id="modalTips" tabindex="-1" aria-labelledby="labelTips" aria-hidden="true">
+                <div class="modal fade" id="modalTips" tabindex="-1" aria-labelledby="labelTips"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
@@ -1353,7 +1343,8 @@
                                 </div>
                             </div>
                             <div class="modal-footer justify-content-end">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Tutup</button>
                                 <a href="#konseling" class="btn btn-primary">Hubungi Konselor</a>
                             </div>
                         </div>
@@ -1442,7 +1433,8 @@
                             </ul>
 
                             <!-- Quick Prompts -->
-                            <div class="mt-3 quick-prompts d-flex flex-wrap gap-2" aria-label="Contoh pertanyaan cepat">
+                            <div class="mt-3 quick-prompts d-flex flex-wrap gap-2"
+                                aria-label="Contoh pertanyaan cepat">
                                 <span class="badge bg-light text-dark mb-2">“Aku sering overthinking, harus
                                     gimana?”</span>
                                 <span class="badge bg-light text-dark mb-2">“Tips biar ga homesick?”</span>
@@ -1450,15 +1442,6 @@
                                 <span class="badge bg-light text-dark mb-2">“Aku pengen curhat.”</span>
                             </div>
 
-
-                            <!-- CTA -->
-                            <div class="d-flex gap-2 flex-wrap">
-
-                                <a href="#kuesioner" class="button mt-20 radius-10"
-                                    style="background:#f1f1f1;color:#111;">
-                                    Cek Kesehatan Mental <i class="lni lni-checkmark-circle"></i>
-                                </a>
-                            </div>
 
                             <!-- Privasi -->
                             <p class="mt-3" style="font-size:.95rem;opacity:.9;">
@@ -1475,7 +1458,8 @@
                     <div class="about-img text-lg-right animate__animated animate__fadeInUp wow"
                         data-wow-duration="1.5s">
                         <div class="image-container">
-                            <img id="foto-rektor" src="/assets/img/vector/11.png" alt="Ilustrasi Ruang Curhat Si Pental"
+                            <img id="foto-rektor" src="/assets/img/vector/11.png"
+                                alt="Ilustrasi Ruang Curhat Si Pental"
                                 style="width:100%;height:100%;object-fit:contain;">
                         </div>
                     </div>
@@ -1489,7 +1473,7 @@
         <div id="ruang" class="container">
             <div class="row align-items-center">
 
-                 <!-- Gambar Samping -->
+                <!-- Gambar Samping -->
                 <div class="col-xl-6 col-lg-6">
                     <div class="about-img text-lg-right animate__animated animate__fadeInUp wow"
                         data-wow-duration="1.5s">
@@ -1504,34 +1488,34 @@
                     <div class="about-content animate__animated animate__fadeInUp wow" data-wow-duration="1.5s">
                         <div class="section-title mb-30">
                             <h1 class="mb-25">Cek Kesehatan Mental Kamu</h1>
-                            <p class="">
-                                Si Pental menyediakan layanan konseling untuk membantu kamu yang sedang menghadapi
-                                masalah
-                                kesehatan mental, seperti stres belajar, kecemasan, atau tekanan sosial.
-                                Kamu bisa terhubung langsung dengan konselor melalui WhatsApp.
+                            <p>
+                                Layanan <b>Si Pental</b> menyediakan fitur <em>self-assessment</em> berupa kuesioner
+                                singkat untuk
+                                mengetahui gambaran kondisi kesehatan mental kamu. Hasil tes akan menunjukkan tingkat
+                                kesejahteraan
+                                emosional, stres, hubungan sosial, dan pengendalian diri.
+                                Dari sana, kamu bisa mendapatkan tips menjaga kesehatan mental dan pilihan untuk
+                                melanjutkan ke sesi konseling.
                             </p>
                         </div>
 
                         <ul>
-                            <li class=""><i class="lni lni-checkmark-circle"></i> Konseling privat dengan
-                                konselor</li>
-                            <li class=""><i class="lni lni-checkmark-circle"></i> Diskusi ringan untuk kelola
-                                stres & emosi</li>
-                            <li class=""><i class="lni lni-checkmark-circle"></i> Rekomendasi langkah lanjutan
+                            <li><i class="lni lni-checkmark-circle"></i> Mengukur tingkat stres, kecemasan, & emosi
                             </li>
-                            <li class=""><i class="lni lni-checkmark-circle"></i> Gratis & rahasia terjaga</li>
+                            <li><i class="lni lni-checkmark-circle"></i> Mengetahui kekuatan & kelemahan diri</li>
+                            <li><i class="lni lni-checkmark-circle"></i> Mendapatkan saran langkah perbaikan</li>
+                            <li><i class="lni lni-checkmark-circle"></i> Data pribadi dijaga kerahasiaannya</li>
                         </ul>
 
-                        <!-- Tombol ke WhatsApp -->
-                        <a href="/questioner" target="_blank" class="button mt-20 radius-10">
-                            Cek Kesehatan Mental Kamu Sekarang <i class="lni lni-angle-double-right"></i>
-                        </a>
-
+                        <!-- Tombol ke halaman kuesioner -->
+                        <a href="{{ route('questioner') }}" class="button mt-20 radius-10">
+                            Mulai Isi Kuesioner Sekarang <i class="lni lni-angle-double-right"></i>
                         </a>
                     </div>
                 </div>
 
-               
+
+
 
             </div>
         </div>
@@ -1745,11 +1729,13 @@
                 </div>
 
                 <!-- ====== Modal 1: Gangguan Depresi ====== -->
-                <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="label1" aria-hidden="true">
+                <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="label1"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="label1">Gangguan Depresi (Major Depressive Disorder)</h5>
+                                <h5 class="modal-title" id="label1">Gangguan Depresi (Major Depressive Disorder)
+                                </h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Tutup"></button>
                             </div>
@@ -1774,14 +1760,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi Konselor</a>
+                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi
+                                    Konselor</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ====== Modal 2: Gangguan Kecemasan Umum ====== -->
-                <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="label2" aria-hidden="true">
+                <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="label2"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
@@ -1809,14 +1797,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi Konselor</a>
+                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi
+                                    Konselor</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ====== Modal 3: Gangguan Bipolar ====== -->
-                <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="label3" aria-hidden="true">
+                <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="label3"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
@@ -1843,14 +1833,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi Konselor</a>
+                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi
+                                    Konselor</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ====== Modal 4: Skizofrenia ====== -->
-                <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="label4" aria-hidden="true">
+                <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="label4"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
@@ -1877,14 +1869,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi Konselor</a>
+                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi
+                                    Konselor</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ====== Modal 5: PTSD ====== -->
-                <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="label5" aria-hidden="true">
+                <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="label5"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
@@ -1911,14 +1905,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi Konselor</a>
+                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi
+                                    Konselor</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ====== Modal 6: OCD ====== -->
-                <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="label6" aria-hidden="true">
+                <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="label6"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
@@ -1944,14 +1940,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi Konselor</a>
+                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi
+                                    Konselor</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ====== Modal 7: Gangguan Makan ====== -->
-                <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="label7" aria-hidden="true">
+                <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="label7"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
@@ -1978,14 +1976,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi Konselor</a>
+                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi
+                                    Konselor</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ====== Modal 8: Fobia Spesifik ====== -->
-                <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="label8" aria-hidden="true">
+                <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="label8"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
@@ -2007,14 +2007,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi Konselor</a>
+                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi
+                                    Konselor</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ====== Modal 9: Panic Disorder ====== -->
-                <div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="label9" aria-hidden="true">
+                <div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="label9"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
@@ -2037,18 +2039,21 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi Konselor</a>
+                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi
+                                    Konselor</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ====== Modal 10: ADHD ====== -->
-                <div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="label10" aria-hidden="true">
+                <div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="label10"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="label10">ADHD (Attention-Deficit/Hyperactivity Disorder)
+                                <h5 class="modal-title" id="label10">ADHD (Attention-Deficit/Hyperactivity
+                                    Disorder)
                                 </h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Tutup"></button>
@@ -2073,18 +2078,21 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi Konselor</a>
+                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi
+                                    Konselor</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ====== Modal 11: BPD ====== -->
-                <div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="label11" aria-hidden="true">
+                <div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="label11"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
-                                <h5 class="modal-title" id="label11">Gangguan Kepribadian Ambang (Borderline / BPD)</h5>
+                                <h5 class="modal-title" id="label11">Gangguan Kepribadian Ambang (Borderline /
+                                    BPD)</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"
                                     aria-label="Tutup"></button>
                             </div>
@@ -2103,14 +2111,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi Konselor</a>
+                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi
+                                    Konselor</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ====== Modal 12: Autisme (ASD) ====== -->
-                <div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="label12" aria-hidden="true">
+                <div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="label12"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
@@ -2140,7 +2150,8 @@
                 </div>
 
                 <!-- ====== Modal 13: Gangguan Tidur ====== -->
-                <div class="modal fade" id="modal13" tabindex="-1" aria-labelledby="label13" aria-hidden="true">
+                <div class="modal fade" id="modal13" tabindex="-1" aria-labelledby="label13"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
@@ -2169,7 +2180,8 @@
                 </div>
 
                 <!-- ====== Modal 14: Demensia ====== -->
-                <div class="modal fade" id="modal14" tabindex="-1" aria-labelledby="label14" aria-hidden="true">
+                <div class="modal fade" id="modal14" tabindex="-1" aria-labelledby="label14"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
@@ -2192,13 +2204,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Konsultasi</a></div>
+                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Konsultasi</a>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ====== Modal 15: Gangguan Psikotik Lainnya ====== -->
-                <div class="modal fade" id="modal15" tabindex="-1" aria-labelledby="label15" aria-hidden="true">
+                <div class="modal fade" id="modal15" tabindex="-1" aria-labelledby="label15"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
@@ -2221,14 +2235,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi Konselor</a>
+                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Hubungi
+                                    Konselor</a>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- ====== Modal 16: Gangguan Disosiatif ====== -->
-                <div class="modal fade" id="modal16" tabindex="-1" aria-labelledby="label16" aria-hidden="true">
+                <div class="modal fade" id="modal16" tabindex="-1" aria-labelledby="label16"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-lg">
                         <div class="modal-content border-0 shadow">
                             <div class="modal-header">
@@ -2251,7 +2267,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Konseling</a></div>
+                            <div class="modal-footer"><a href="#konseling" class="btn btn-primary">Konseling</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2351,7 +2368,8 @@
                     alt="Flag Counter" border="0"></a>
 
             <div class="copy-right">
-                <p>Copyright © 2025 <a href="#">Si Pental</a> | Sistem Informasi Pendampingan Kesehatan Mental</p>
+                <p>Copyright © 2025 <a href="#">Si Pental</a> | Sistem Informasi Pendampingan Kesehatan Mental
+                </p>
             </div>
         </div>
     </footer>
@@ -2363,8 +2381,8 @@
     </a>
 
     <!-- Ganti semua JS bootstrap lama -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+    </script>
 
     <script src="/assets/js/count-up.min.js"></script>
     <script src="/assets/js/glightbox.min.js"></script>
@@ -2377,15 +2395,15 @@
     <script src="/assets/js/main.js"></script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            document.querySelectorAll('.modal').forEach(function (m) {
+        document.addEventListener('DOMContentLoaded', function() {
+            document.querySelectorAll('.modal').forEach(function(m) {
                 // kalau modal bukan child langsung body, pindahkan
                 if (m.parentElement !== document.body) document.body.appendChild(m);
             });
         });
     </script>
     <script>
-        document.addEventListener('click', function (e) {
+        document.addEventListener('click', function(e) {
             const trigger = e.target.closest('[data-bs-toggle="modal"]');
             if (!trigger) return;
             const sel = trigger.getAttribute('data-bs-target');
