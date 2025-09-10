@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="/assets/css/bootstrap-5.0.0-beta2.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/LineIcons.2.0.css" />
     <link rel="stylesheet" href="/assets/css/tiny-slider.css" />
     <link rel="stylesheet" href="/assets/css/style.css" />
@@ -46,19 +47,65 @@
         </div>
     </div>
 
-    <nav id="nav" class="shadow-sm">
-        <div class="logo">
-            <img src="/assets/img/logo.png" alt="">
+
+    <nav class="navbar bg-body-tertiary fixed-top" id="nav">
+        <div class="container-fluid">
+
+            <div class="logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <img src="/assets/img/logo.png" alt="">
+            </div>
+
+            <div class="profile" data-bs-toggle="modal" data-bs-target="#loginModal">
+
+
+                <img class="rounded-circle" src="/assets/img/account.png" alt=""
+                    style="width: 35px; height: 35px;">
+
+            </div>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <img id="myuinsu" src="/assets/img/logo2.png" alt="Logo Si Pental">
+                    {{-- <span class="fs-1   mt-2">Menu</span> --}}
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/" onclick="window.location.href='/'">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/profil" onclick="window.location.href='/profil'">Profil Pengabdi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#penyebab">Penyebab</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tanda">Tanda-Tanda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tips">Tips & Trik</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tentang">Ruang Curhat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/questioner" onclick="window.location.href='/questioner'">Cek Kesehatan Mental</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#konseling">Ruang Konseling</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
         </div>
-       
-
-        <div data-bs-toggle="modal" data-bs-target="#loginModal" class="profile">
-
-
-            <img class="rounded-circle" src="/assets/img/account.png" alt="" style="width: 35px; height: 35px;">
-
-        </div>
-
     </nav>
 
     <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
@@ -438,13 +485,13 @@
         </script>
     @endif
 
-    <footer class="footer">
+ <footer class="footer">
         <div class="container">
             <div class="widget-wrapper">
                 <div class="row">
 
                     <!-- Logo & Deskripsi -->
-                    <div class="col-xl-3 col-md-6">
+                    <div class="col-xl-5 col-md-6">
                         <div class="footer-widget">
                             <div class="logo mb-35">
                                 <a href="index.html">
@@ -467,41 +514,8 @@
                         </div>
                     </div>
 
-                    <!-- Navigasi Cepat -->
-                    <div class="col-xl-2 offset-xl-1 col-md-5 offset-md-1 col-sm-6">
-                        <div class="footer-widget">
-                            <h3>Menu</h3>
-                            <ul class="links">
-                                <li><a href="#hero">Beranda</a></li>
-                                <li><a href="#content-2">Informasi</a></li>
-                                <li><a href="#penyebab">Penyebab</a></li>
-                                <li><a href="#tanda">Tanda-Tanda</a></li>
-                                <li><a href="#tips">Tips & Trik</a></li>
-                                <li><a href="#tentang">Ruang Curhat</a></li>
-                                <li><a href="#kuesioner">Cek Kesehatan Mental</a></li>
-                                <li><a href="#konseling">Ruang Konseling</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <!-- Fitur Utama -->
-                    <div class="col-xl-3 col-md-6 col-sm-6">
-                        <div class="footer-widget">
-                            <h3>Fitur Utama</h3>
-                            <ul class="links">
-                                <li><a href="#content-2">Informasi Kesehatan Mental</a></li>
-                                <li><a href="#penyebab">Penyebab Gangguan Mental</a></li>
-                                <li><a href="#tanda">Tanda-Tanda Gangguan</a></li>
-                                <li><a href="#tips">Tips Menjaga Mental</a></li>
-                                <li><a href="#tentang">Ruang Curhat (Chat Bot)</a></li>
-                                <li><a href="#kuesioner">Cek Kesehatan Mental</a></li>
-                                <li><a href="#konseling">Konseling Online</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
                     <!-- Galeri Mini -->
-                    <div class="col-xl-3 col-md-6">
+                    <div class="col-xl-4 col-md-6">
                         <div class="footer-widget">
                             <h3>Galeri</h3>
                             <div class="d-flex flex-wrap gap-2">
@@ -511,19 +525,25 @@
                                     alt="Galeri 2" style="width:200px; height:auto; object-fit:cover;">
                                 <img src="https://uinsu.ac.id/wp-content/uploads/2024/02/2-11.jpg" alt="Galeri 3"
                                     style="width:200px; height:auto; object-fit:cover;">
-                                <img src="https://tracerstudy.uinsu.ac.id/img/logo.png" alt="Galeri 4"
-                                    style="width:200px; height:auto; object-fit:contain;">
+
                             </div>
                         </div>
+                    </div>
+
+                    <div class="col-xl-2 col-md-6 ">
+                        <!-- Flag Counter lama -->
+                       
+                        <a href="https://info.flagcounter.com/a6uQ"><img
+                                src="https://s01.flagcounter.com/count2/a6uQ/bg_FFFFFF/txt_000000/border_FFFFFF/columns_2/maxflags_10/viewers_Pengunjung/labels_0/pageviews_0/flags_0/percent_0/"
+                                alt="Flag Counter" border="0"></a>
+                         <img src="https://tracerstudy.uinsu.ac.id/img/logo.png" alt="Galeri 4"
+                            style="width:200px; height:auto; object-fit:contain;">
                     </div>
 
                 </div>
             </div>
 
-            <!-- Flag Counter lama -->
-            <a href="https://info.flagcounter.com/a6uQ"><img
-                    src="https://s01.flagcounter.com/count2/a6uQ/bg_FFFFFF/txt_000000/border_FFFFFF/columns_2/maxflags_10/viewers_Pengunjung/labels_0/pageviews_0/flags_0/percent_0/"
-                    alt="Flag Counter" border="0"></a>
+
 
             <div class="copy-right">
                 <p>Copyright © 2025 <a href="#">Si Pental</a> | Sistem Informasi Pendampingan Kesehatan Mental
@@ -534,12 +554,19 @@
 
 
 
+
     <a href="#" class="scroll-top btn-hover">
         <i class="lni lni-chevron-up"></i>
     </a>
 
-    <!-- Ganti semua JS bootstrap lama -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+        integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous">
     </script>
 
     <script src="/assets/js/count-up.min.js"></script>
